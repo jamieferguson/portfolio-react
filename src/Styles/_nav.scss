@@ -1,0 +1,63 @@
+nav {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	background-color: $text-color;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	box-shadow: 0 1px 0 rgba(black, .2);
+	height: $navHeight;
+
+	.work & {
+		transition: .15s;
+
+		&:not(:hover) {
+			background: transparent !important;
+		}
+	}
+
+	ul {
+		li {
+			display: inline-block;
+
+			a,
+			a:visited {
+				display: block;
+				color: $white;
+				line-height: 1;
+				padding: 5px 15px;
+				margin: 10px 0;
+				border-radius: 15px;
+				line-height: 20px;
+			}
+
+			&.current,
+			&:hover {
+
+				a,
+				a:visited {
+					color: $text-color;
+					background-color: $white;
+				}
+			}
+		}
+	}
+
+	.shorthand & {
+		background-color: rgba($shorthand, .6);
+	}
+
+	.viator & {
+		background-color: rgba($viator, .6);
+	}
+
+	.tgm & {
+		background-color: rgba($tgm, .6);
+	}
+
+	.aus & {
+		background-color: rgba($aus, .6);
+	}
+}
