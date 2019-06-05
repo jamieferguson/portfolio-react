@@ -1,15 +1,9 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 
 import Nav from './Components/Nav';
 import WorkList from './Components/WorkList';
 import Page from './Components/Page';
 import Footer from './Components/Footer';
-
-// const ScrollToTop = () => {
-// 	window.scrollTo(0, 0);
-// 	return null;
-// };
 
 const Home = () => (
 	<Page>

@@ -1,18 +1,12 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Page from '../Components/Page';
 import Footer from '../Components/Footer';
 
-// const ScrollToTop = () => {
-// 	window.scrollTo(0, 0);
-// 	return null;
-// };
-
 const WorkShorthand = () => (
 	<Page>
 		<main className="work shorthand">
-			{/* <Route component={ScrollToTop} /> */}
 			<nav className="work-nav">
 				<Link
 					className="btn"

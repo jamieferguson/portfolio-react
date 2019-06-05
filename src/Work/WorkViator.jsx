@@ -1,17 +1,11 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Page from '../Components/Page';
-
-// const ScrollToTop = () => {
-// 	window.scrollTo(0, 0);
-// 	return null;
-// };
 
 function WorkViator() {
 	return (
 		<Page>
 			<div className="work viator">
-				{/* <Route component={ScrollToTop} /> */}
 				<nav className="work-nav">
 					<Link
 						className="btn"

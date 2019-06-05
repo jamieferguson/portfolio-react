@@ -2,6 +2,7 @@
 @import "variables";
 @import "nav";
 @import "home";
+@import "buttons";
 @import "worklist";
 @import "footer";
 
@@ -133,40 +134,7 @@ img {
 	display: block;
 }
 
-.btn {
-	display: inline-block;
-	background-color: $text-color;
-	color: $white;
-	padding: 15px 25px;
-	border-radius: 30px;
-	margin: 20px auto;
-	font-weight: bold;
-	font-size: 110%;
 
-	.shorthand & {
-		background-color: $shorthand;
-
-		&:hover {
-			background-color: darken($shorthand, 5%);
-		}
-	}
-
-	.viator & {
-		background-color: $viator;
-
-		&:hover {
-			background-color: darken($viator, 5%);
-		}
-	}
-
-	.tgm & {
-		background-color: $tgm;
-
-		&:hover {
-			background-color: darken($tgm, 5%);
-		}
-	}
-}
 
 .centered {
 	position: absolute;
@@ -562,14 +530,15 @@ header {
 // }
 
 .page {
-	transition: transform .25s ease-in-out;
+	transition: transform .25s ease-in-out, filter .15s ease-in-out;
 	width: 100%;
 	overflow-x: hidden;
 }
 
 .page-enter {
-	transform: translate(-100%, 0);
+	transform: translateX(-100vw);
 	position: fixed;
+	// opacity: 0;
 
 	nav {
 		transform: translateY(-100px);
@@ -577,26 +546,34 @@ header {
 }
 
 .page-enter-active {
-	transform: translate(0, 0);
+	transform: translateX(0);
+	// opacity: 1;
 }
 
 .page-exit {
-	transform: translate(-100%, 0);
+	transform: translateX(-100vw);
 	position: fixed;
+	// opacity: 0;
+	filter: brightness(50%);
 
 	nav {
 		transform: translateY(-100px);
 	}
 }
 
+.page-exit-active {
+	// opacity: 0;
+	filter: brightness(50%);
+}
+
 .page--prev.page-enter {
-	transform: translate(100%, 0);
+	transform: translateX(100vw);
 }
 
 .page--prev.page-enter-active {
-	transform: translate(0, 0);
+	transform: translateX(0);
 }
 
 .page--prev.page-exit {
-	transform: translate(100%, 0);
+	transform: translateX(100vw);
 }
