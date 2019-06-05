@@ -1,11 +1,20 @@
 import React from 'react';
-import WorkList from './Components/WorkList';
+import { Route } from 'react-router-dom';
 
-import BodyClassName from 'react-body-classname';
+import Nav from './Components/Nav';
+import WorkList from './Components/WorkList';
+import Page from './Components/Page';
+import Footer from './Components/Footer';
+
+// const ScrollToTop = () => {
+// 	window.scrollTo(0, 0);
+// 	return null;
+// };
 
 const Home = () => (
-	<BodyClassName className="home">
-		<div>
+	<Page>
+		<div className="home">
+			<Nav />
 			<header>
 				<div className="centered">
 					<h1>Jamie Ferguson</h1>
@@ -18,8 +27,9 @@ const Home = () => (
 				<h5>My work</h5>
 				<WorkList />
 			</section>
+			<Footer />
 		</div>
-	</BodyClassName>
+	</Page>
 );
 
 export default Home;

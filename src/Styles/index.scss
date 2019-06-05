@@ -6,6 +6,7 @@
 @import "footer";
 
 
+
 html {
 	box-sizing: border-box;
 }
@@ -15,8 +16,21 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: $mono;
 	color: $text-color;
-	background-color: #222;
+	background-color: white;
+	font-size: 16px;
+	transition: background-color .25s ease-in-out;
 
+	@media(min-width: $breakpoint-md) {
+		font-size: 18px;
+	}
+
+	@media(min-width: $breakpoint-lg) {
+		font-size: 20px;
+	}
+
+	@media(min-width: $breakpoint-xl) {
+		font-size: 22px;
+	}
 
 	/* width */
 	&::-webkit-scrollbar {
@@ -38,12 +52,33 @@ body {
 			background: rgba($text-color, .6);
 		}
 	}
+
+	&.shorthand {
+		background-color: $shorthand;
+	}
+
+	&.viator {
+		background-color: $viator;
+	}
+
+	&.tgm {
+		background-color: $tgm;
+	}
+
+	&.aus {
+		background-color: $aus;
+	}
 }
 
 *,
 *:before,
 *:after {
 	box-sizing: inherit;
+}
+
+#portfolio {
+	width: 100%;
+	overflow-x: hidden;
 }
 
 a,
@@ -66,7 +101,7 @@ p {
 			border-bottom: 1px solid;
 		}
 
-		&:visited {
+		&:not(.btn):visited {
 			color: $text-color-alt;
 		}
 	}
@@ -99,15 +134,14 @@ img {
 }
 
 .btn {
-	display: block;
+	display: inline-block;
 	background-color: $text-color;
 	color: $white;
 	padding: 15px 25px;
 	border-radius: 30px;
-	width: 160px;
 	margin: 20px auto;
 	font-weight: bold;
-	font-size: 150%;
+	font-size: 110%;
 
 	.shorthand & {
 		background-color: $shorthand;
@@ -152,26 +186,26 @@ header {
 	position: relative;
 	z-index: 0;
 	height: 75vh;
-	min-height: 500px;
+	// min-height: 500px;
 
 	h1 {
-		margin: 0 auto 10px;
+		margin: 0 auto .5em;
 		font-family: $title;
 		line-height: 1.3;
 		text-transform: uppercase;
 		font-weight: 900;
 		letter-spacing: .35em;
-		font-size: 180%;
+		font-size: calc(100% + 1.5vw);
 
-		@media (min-width: $breakpoint-lg) {
-			font-size: 300%;
+		@media (orientation:landscape) {
+			font-size: calc(100% + 1.25vw);
 		}
 	}
 
 	h2 {
 		margin: 0;
 		font-weight: normal;
-		font-size: 120%;
+		font-size: calc(100% + .15vw);
 
 		span {
 			color: rgba($text-color, .4);
@@ -286,7 +320,7 @@ header {
 	}
 
 	p {
-		font-size: 120%;
+		font-size: 110%;
 		line-height: 1.4;
 
 		&:first-of-type {
@@ -424,94 +458,145 @@ header {
 
 
 
-@media (max-width: $breakpoint-lg) {
-	.example.grid ul li {
-		width: 50%;
+// @media (max-width: $breakpoint-lg) {
+// 	.example.grid ul li {
+// 		width: 50%;
+// 	}
+// }
+
+// @media (max-width: $breakpoint-sm) {
+// 	font-size: 80%;
+
+// 	h3 {
+// 		font-size: 100%;
+// 	}
+
+// 	h5 {
+// 		font-size: 110%;
+// 		margin: 1rem auto;
+// 	}
+
+// 	header {
+// 		height: 40vh;
+// 		min-height: 0;
+
+// 		&.sub {
+// 			.centered {
+// 				margin-top: 20px;
+// 			}
+// 		}
+
+// 		h1 {
+// 			font-size: 160%;
+// 			margin-bottom: 2px;
+// 		}
+
+// 		h2 {
+// 			font-size: 110%;
+// 		}
+// 	}
+
+// 	// #work {
+// 	// 	ul li {
+// 	// 		a,
+// 	// 		a:visited {
+// 	// 			.text {
+// 	// 				padding: 30px 20px;
+// 	// 			}
+// 	// 		}
+// 	// 	}
+// 	// }
+// 	.example {
+// 		.bordered {
+// 			margin-bottom: 1rem;
+
+// 			p {
+// 				position: relative;
+// 				padding: 10px;
+// 			}
+// 		}
+
+// 		.grid ul {
+// 			margin-bottom: 10px;
+
+// 			&.quarter li {
+// 				width: 50%;
+// 				min-width: 0;
+// 			}
+
+// 			li {
+// 				width: 100%;
+// 				min-width: 290px;
+// 			}
+// 		}
+// 	}
+// }
+
+// .transition-enter {
+// 	transform: translatex(100vw);
+
+// 	nav {
+// 		transform: translateY(-100px);
+// 	}
+// }
+
+// .transition-enter-active {
+// 	// opacity: 1;
+// 	transform: translatex(0);
+// 	transition: .5s ease-in-out;
+// }
+
+// .transition-exit {
+// 	// opacity: 1;
+// 	transform: translatex(0);
+
+// 	nav {
+// 		transform: translateY(-100px);
+// 	}
+// }
+
+// .transition-exit-active {
+// 	// opacity: 0.01;
+// 	transform: translatex(-100vw);
+// 	transition: .5s ease-in-out;
+// }
+
+.page {
+	transition: transform .25s ease-in-out;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.page-enter {
+	transform: translate(-100%, 0);
+	position: fixed;
+
+	nav {
+		transform: translateY(-100px);
 	}
 }
 
-@media (max-width: $breakpoint-sm) {
-	font-size: 80%;
+.page-enter-active {
+	transform: translate(0, 0);
+}
 
-	h3 {
-		font-size: 100%;
-	}
+.page-exit {
+	transform: translate(-100%, 0);
+	position: fixed;
 
-	h5 {
-		font-size: 110%;
-		margin: 1rem auto;
-	}
-
-	header {
-		height: 40vh;
-		min-height: 0;
-
-		&.sub {
-			.centered {
-				margin-top: 20px;
-			}
-		}
-
-		h1 {
-			font-size: 160%;
-			margin-bottom: 2px;
-		}
-
-		h2 {
-			font-size: 110%;
-		}
-	}
-
-	// #work {
-	// 	ul li {
-	// 		a,
-	// 		a:visited {
-	// 			.text {
-	// 				padding: 30px 20px;
-	// 			}
-	// 		}
-	// 	}
-	// }
-	.example {
-		.bordered {
-			margin-bottom: 1rem;
-
-			p {
-				position: relative;
-				padding: 10px;
-			}
-		}
-
-		.grid ul {
-			margin-bottom: 10px;
-
-			&.quarter li {
-				width: 50%;
-				min-width: 0;
-			}
-
-			li {
-				width: 100%;
-				min-width: 290px;
-			}
-		}
+	nav {
+		transform: translateY(-100px);
 	}
 }
 
-.fade-enter {
-	opacity: 0.01;
+.page--prev.page-enter {
+	transform: translate(100%, 0);
 }
 
-.fade-enter-active {
-	opacity: 1;
-	transition: opacity .5s ease-in-out;
+.page--prev.page-enter-active {
+	transform: translate(0, 0);
 }
 
-.fade-exit {
-	opacity: 1;
-}
-
-.fade-exit-active {
-	opacity: 0.01;
-	transition: opacity .5s ease-in-out;
+.page--prev.page-exit {
+	transform: translate(100%, 0);
 }

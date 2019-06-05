@@ -1,31 +1,54 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 
 import './Styles/index.scss';
 
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import Nav from './Components/Nav';
-import Main from './Main';
-import Footer from './Components/Footer';
+import Home from './Home';
+import WorkShorthand from './Work/WorkShorthand';
+import WorkViator from './Work/WorkViator';
+import WorkTGM from './Work/WorkTGM';
+import WorkAus from './Work/WorkAus';
 
-import * as serviceWorker from './serviceWorker';
+const supportsHistory = 'pushState' in window.history;
 
-const ScrollToTop = () => {
-	window.scrollTo(0, 0);
-	return null;
-};
-
-ReactDOM.render(
-	<BrowserRouter>
-		<Route component={ScrollToTop} /> <Nav />
-		<Main />
-		<Footer />
-	</BrowserRouter>,
-	document.getElementById('portfolio')
+const Portfolio = ({}) => (
+	<BrowserRouter forceRefresh={!supportsHistory}>
+		<main>
+			<Route
+				render={({ location }) => {
+					const { pathname } = location;
+					return (
+						<TransitionGroup>
+							<CSSTransition
+								key={pathname}
+								classNames={'page'}
+								timeout={{
+									enter: 250,
+									exit: 250
+								}}
+							>
+								<Route
+									location={location}
+									render={() => (
+										<Switch>
+											<Route exact path="/" component={Home} />
+											<Route path="/work-shorthand" component={WorkShorthand} />
+											<Route path="/work-viator" component={WorkViator} />
+											<Route path="/work-tgm" component={WorkTGM} />
+											<Route path="/work-aus" component={WorkAus} />
+										</Switch>
+									)}
+								/>
+							</CSSTransition>
+						</TransitionGroup>
+					);
+				}}
+			/>
+		</main>
+	</BrowserRouter>
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+render(<Portfolio />, document.getElementById('portfolio'));

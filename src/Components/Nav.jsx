@@ -4,10 +4,17 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
 	return (
-		<nav>
+		<nav className="main-nav">
 			<ul>
 				<li className="nav-home">
-					<Link to="/">Home</Link>
+					<Link
+						to={{
+							pathname: '/',
+							state: { prev: false }
+						}}
+					>
+						Home
+					</Link>
 				</li>
 				<li>
 					<a href="mailto:jamie@jferguson.me">Contact</a>

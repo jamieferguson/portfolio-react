@@ -4,8 +4,13 @@ import { Link } from 'react-router-dom';
 function WorkList() {
 	return (
 		<ul>
-			<li>
-				<Link to="work-shorthand" className="shorthand">
+			<li className="shorthand">
+				<Link
+					to={{
+						pathname: '/work-shorthand',
+						state: { prev: true }
+					}}
+				>
 					<div className="image" />
 					<div className="text">
 						<h3>Shorthand</h3>
@@ -14,8 +19,13 @@ function WorkList() {
 					</div>
 				</Link>
 			</li>
-			<li>
-				<Link to="work-viator" className="viator">
+			<li className="viator">
+				<Link
+					to={{
+						pathname: '/work-viator',
+						state: { prev: true }
+					}}
+				>
 					<div className="image" />
 					<div className="text">
 						<h3>Viator</h3>
@@ -24,8 +34,13 @@ function WorkList() {
 					</div>
 				</Link>
 			</li>
-			<li>
-				<Link to="work-tgm" className="tgm">
+			<li className="tgm">
+				<Link
+					to={{
+						pathname: '/work-tgm',
+						state: { prev: true }
+					}}
+				>
 					<div className="image" />
 					<div className="text">
 						<h3>The Global Mail</h3>
@@ -34,8 +49,13 @@ function WorkList() {
 					</div>
 				</Link>
 			</li>
-			<li>
-				<Link to="work-aus" className="aus">
+			<li className="aus">
+				<Link
+					to={{
+						pathname: '/work-aus',
+						state: { prev: true }
+					}}
+				>
 					<div className="image" />
 					<div className="text">
 						<h3>The Australian</h3>

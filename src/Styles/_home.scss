@@ -13,6 +13,8 @@
 
     @media (orientation: portrait) {
       margin-top: $navHeight;
+      height: 30vh;
+      min-height: 30vh;
     }
   }
 
@@ -29,7 +31,6 @@
   }
 
   nav {
-    background-color: transparent;
     color: $text-color;
     box-shadow: none;
 
