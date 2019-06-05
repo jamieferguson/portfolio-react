@@ -8,14 +8,13 @@
 	text-align: center;
 	box-shadow: 0 1px 0 rgba(black, .2);
 	height: $navHeight;
-	transition: .15s;
+	transition: transform .15s ease-in-out;
 
-	.work & {
-
-		&:not(:hover) {
-			background: transparent !important;
-		}
-	}
+	// .work & {
+	// 	&:not(:hover) {
+	// 		background: transparent !important;
+	// 	}
+	// }
 
 	ul {
 		li {
@@ -45,21 +44,21 @@
 		}
 	}
 
-	.shorthand & {
-		background-color: rgba($shorthand, .6);
-	}
+	// .shorthand & {
+	// 	background-color: rgba($shorthand, .6);
+	// }
 
-	.viator & {
-		background-color: rgba($viator, .6);
-	}
+	// .viator & {
+	// 	background-color: rgba($viator, .6);
+	// }
 
-	.tgm & {
-		background-color: rgba($tgm, .6);
-	}
+	// .tgm & {
+	// 	background-color: rgba($tgm, .6);
+	// }
 
-	.aus & {
-		background-color: rgba($aus, .6);
-	}
+	// .aus & {
+	// 	background-color: rgba($aus, .6);
+	// }
 }
 
 .work-nav {
@@ -67,14 +66,15 @@
 	top: 15px;
 	left: 15px;
 	z-index: 1;
-	width: 50px;
-	height: 50px;
+	// width: 50px;
+	// height: 50px;
+	transition: transform .15s ease-in-out;
 
 	.btn {
 		margin: auto;
 		box-shadow: 0 0 0 4px white;
-		width: 100%;
-		height: 100%;
+		width: 50px;
+		height: 50px;
 		border-radius: 50%;
 		padding: 0;
 		position: relative;

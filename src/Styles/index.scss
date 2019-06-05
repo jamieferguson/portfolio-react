@@ -18,9 +18,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: $mono;
 	color: $text-color;
-	background-color: white;
+	background-color: $text-color;
 	font-size: 16px;
-	// transition: background-color .25s ease-in-out;
+	transition: background-color .25s ease-in-out;
 
 	@media(min-width: $breakpoint-md) {
 		font-size: 18px;

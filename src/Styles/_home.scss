@@ -1,5 +1,5 @@
 .home {
-
+  background-color: white;
 
   header {
     background: white;
@@ -12,9 +12,13 @@
     }
 
     @media (orientation: portrait) {
-      margin-top: $navHeight;
-      height: 30vh;
-      min-height: 30vh;
+      // margin-top: $navHeight;
+      height: calc(35vh + #{$navHeight});
+      min-height: calc(35vh + #{$navHeight});
+    }
+
+    h1 {
+      margin-top: $navHeight / 2;
     }
   }
 
@@ -58,7 +62,6 @@
         }
       }
     }
-
   }
 
   .nav-home {
@@ -76,26 +79,6 @@
       box-shadow: inset 20px 0 20px -20px black;
       overflow-x: hidden;
       overflow-y: auto;
-
-      // &::-webkit-scrollbar {
-      //   width: 8px;
-      //   background: white;
-      // }
-
-      // /* Track */
-      // &::-webkit-scrollbar-track {
-      //   background: white;
-      // }
-
-      // /* Handle */
-      // &::-webkit-scrollbar-thumb {
-      //   background: rgba($text-color, .4);
-      //   width: 6px;
-
-      //   &:hover {
-      //     background: rgba($text-color, .6);
-      //   }
-      // }
     }
 
     h5 {
