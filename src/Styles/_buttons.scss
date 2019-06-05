@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  background-color: $text-color;
+  color: $white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  margin: 20px auto;
+  font-weight: bold;
+  font-size: 110%;
+
+  .shorthand & {
+    background-color: $shorthand;
+
+    &:hover {
+      background-color: darken($shorthand, 5%);
+    }
+  }
+
+  .viator & {
+    background-color: $viator;
+
+    &:hover {
+      background-color: darken($viator, 5%);
+    }
+  }
+
+  .tgm & {
+    background-color: $tgm;
+
+    &:hover {
+      background-color: darken($tgm, 5%);
+    }
+  }
+
+  .aus & {
+    background-color: $aus;
+
+    &:hover {
+      background-color: darken($aus, 5%);
+    }
+  }
+}
