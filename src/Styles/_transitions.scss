@@ -1,0 +1,62 @@
+%hide-scrollbar {
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    width: 0;
+  }
+}
+
+.page {
+  transition: transform .3s ease-out;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.page-enter {
+  transform: translateX(-100vw);
+  position: fixed;
+  // @extend %hide-scrollbar;
+
+  nav {
+    transform: translateY(-100px);
+  }
+}
+
+.page-enter-active {
+  transform: translateX(0);
+  // opacity: 1;
+}
+
+.page-exit {
+  transform: translateX(-100vw);
+  position: fixed;
+  // @extend %hide-scrollbar;
+  // opacity: 0;
+  // filter: brightness(50%);
+
+  nav {
+    transform: translateY(-100px);
+  }
+}
+
+.page-exit-active {
+  // opacity: 0;
+  // filter: brightness(50%);
+}
+
+.page--prev.page-enter {
+  transform: translateX(100vw);
+}
+
+.page--prev.page-enter-active {
+  transform: translateX(0);
+}
+
+.page--prev.page-exit {
+  transform: translateX(100vw);
+}

@@ -25,6 +25,9 @@ function WorkViator() {
 								Interaction Design <span>/ 2013</span>
 							</h2>
 						</div>
+						<div className="background-wrapper">
+							<div className="background-image" />
+						</div>
 					</header>
 					<section id="intro">
 						<p>

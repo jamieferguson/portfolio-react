@@ -27,3 +27,25 @@ $title: 'Raleway',
 sans-serif;
 $mono: 'Inconsolata',
 monospace;
+
+%scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+    background: white;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgba($text-color, .4);
+    width: 6px;
+
+    &:hover {
+      background: rgba($text-color, .6);
+    }
+  }
+}

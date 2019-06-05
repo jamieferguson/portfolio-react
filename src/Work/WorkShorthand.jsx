@@ -26,6 +26,9 @@ const WorkShorthand = () => (
 							Product &amp; UX Design <span>/ 2014-19</span>
 						</h2>
 					</div>
+					<div className="background-wrapper">
+						<div className="background-image" />
+					</div>
 				</header>
 				<section id="intro">
 					<p>Shorthand is a Brisbane based start-up who developed webapps allowing writers and designers to easily create stunning editorial features with zero development.</p>

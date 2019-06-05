@@ -31,6 +31,9 @@ function WorkAus() {
 								Editorial & Interaction Design <span>/ 2011</span>
 							</h2>
 						</div>
+						<div className="background-wrapper">
+							<div className="background-image" />
+						</div>
 					</header>
 					<section id="intro">
 						<p>The Global Mail was a short-lived, not-for-profit news organisation that focussed on long-form storytelling & data-driven journalism.</p>

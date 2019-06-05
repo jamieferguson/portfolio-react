@@ -71,9 +71,31 @@
 
     @media (orientation: landscape) {
       width: 50vw;
-      min-height: 100vh;
+      height: 100vh;
       margin-left: 50vw;
       box-shadow: inset 20px 0 20px -20px black;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      // &::-webkit-scrollbar {
+      //   width: 8px;
+      //   background: white;
+      // }
+
+      // /* Track */
+      // &::-webkit-scrollbar-track {
+      //   background: white;
+      // }
+
+      // /* Handle */
+      // &::-webkit-scrollbar-thumb {
+      //   background: rgba($text-color, .4);
+      //   width: 6px;
+
+      //   &:hover {
+      //     background: rgba($text-color, .6);
+      //   }
+      // }
     }
 
     h5 {

@@ -11,11 +11,13 @@ function WorkList() {
 						state: { prev: true }
 					}}
 				>
-					<div className="image" />
 					<div className="text">
 						<h3>Shorthand</h3>
 						<h4>Editorial & UX Design</h4>
 						<div className="date">2014-19</div>
+					</div>
+					<div className="background-wrapper">
+						<div className="background-image" />
 					</div>
 				</Link>
 			</li>
@@ -26,11 +28,13 @@ function WorkList() {
 						state: { prev: true }
 					}}
 				>
-					<div className="image" />
 					<div className="text">
 						<h3>Viator</h3>
 						<h4>UX Design</h4>
 						<div className="date">2013</div>
+					</div>
+					<div className="background-wrapper">
+						<div className="background-image" />
 					</div>
 				</Link>
 			</li>
@@ -41,11 +45,13 @@ function WorkList() {
 						state: { prev: true }
 					}}
 				>
-					<div className="image" />
 					<div className="text">
 						<h3>The Global Mail</h3>
 						<h4>Data Vis & Editorial Design</h4>
 						<div className="date">2012</div>
+					</div>
+					<div className="background-wrapper">
+						<div className="background-image" />
 					</div>
 				</Link>
 			</li>
@@ -56,11 +62,13 @@ function WorkList() {
 						state: { prev: true }
 					}}
 				>
-					<div className="image" />
 					<div className="text">
 						<h3>The Australian</h3>
 						<h4>Editorial & UX Design</h4>
 						<div className="date">2011</div>
+					</div>
+					<div className="background-wrapper">
+						<div className="background-image" />
 					</div>
 				</Link>
 			</li>

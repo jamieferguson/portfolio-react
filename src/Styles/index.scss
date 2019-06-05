@@ -5,6 +5,7 @@
 @import "buttons";
 @import "worklist";
 @import "footer";
+@import "transitions";
 
 
 
@@ -19,7 +20,7 @@ body {
 	color: $text-color;
 	background-color: white;
 	font-size: 16px;
-	transition: background-color .25s ease-in-out;
+	// transition: background-color .25s ease-in-out;
 
 	@media(min-width: $breakpoint-md) {
 		font-size: 18px;
@@ -33,26 +34,7 @@ body {
 		font-size: 22px;
 	}
 
-	/* width */
-	&::-webkit-scrollbar {
-		width: 8px;
-		background: white;
-	}
-
-	/* Track */
-	&::-webkit-scrollbar-track {
-		background: white;
-	}
-
-	/* Handle */
-	&::-webkit-scrollbar-thumb {
-		background: rgba($text-color, .4);
-		width: 6px;
-
-		&:hover {
-			background: rgba($text-color, .6);
-		}
-	}
+	// @extend %scrollbar;
 
 	&.shorthand {
 		background-color: $shorthand;
@@ -188,28 +170,21 @@ header {
 		color: $white;
 		box-shadow: inset 0 -10px 15px -15px black;
 
+
 		.shorthand & {
-			background: $shorthand url('../Media/index-shorthand.jpg') center no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
+			background: $shorthand;
 		}
 
 		.viator & {
-			background: $viator url('../Media/index-viator.jpg') center no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
+			background: $viator;
 		}
 
 		.tgm & {
-			background: $tgm url('../Media/index-tgm.jpg') center no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
+			background: $tgm;
 		}
 
 		.aus & {
-			background: $aus url('../Media/index-aus.jpg') center no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
+			background: $aus;
 		}
 
 		&:after,
@@ -251,6 +226,50 @@ header {
 				background-color: $aus;
 			}
 		}
+	}
+}
+
+.background-wrapper {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.background-image {
+	position: fixed;
+	display: block;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vw;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: -1;
+
+
+	.shorthand & {
+		background-image: url('../Media/index-shorthand.jpg');
+		background-color: $shorthand;
+	}
+
+	.viator & {
+		background-image: url('../Media/index-viator.jpg');
+		background-color: $viator
+	}
+
+	.tgm & {
+		background-image: url('../Media/index-tgm.jpg');
+		background-color: $tgm
+	}
+
+	.aus & {
+		background-image: url('../Media/index-aus.jpg');
+		background-color: $aus
 	}
 }
 
@@ -528,52 +547,3 @@ header {
 // 	transform: translatex(-100vw);
 // 	transition: .5s ease-in-out;
 // }
-
-.page {
-	transition: transform .25s ease-in-out, filter .15s ease-in-out;
-	width: 100%;
-	overflow-x: hidden;
-}
-
-.page-enter {
-	transform: translateX(-100vw);
-	position: fixed;
-	// opacity: 0;
-
-	nav {
-		transform: translateY(-100px);
-	}
-}
-
-.page-enter-active {
-	transform: translateX(0);
-	// opacity: 1;
-}
-
-.page-exit {
-	transform: translateX(-100vw);
-	position: fixed;
-	// opacity: 0;
-	filter: brightness(50%);
-
-	nav {
-		transform: translateY(-100px);
-	}
-}
-
-.page-exit-active {
-	// opacity: 0;
-	filter: brightness(50%);
-}
-
-.page--prev.page-enter {
-	transform: translateX(100vw);
-}
-
-.page--prev.page-enter-active {
-	transform: translateX(0);
-}
-
-.page--prev.page-exit {
-	transform: translateX(100vw);
-}
