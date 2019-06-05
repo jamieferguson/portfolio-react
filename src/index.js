@@ -14,7 +14,7 @@ import WorkAus from './Work/WorkAus';
 
 const supportsHistory = 'pushState' in window.history;
 
-const Portfolio = ({}) => (
+const Portfolio = () => (
 	<BrowserRouter forceRefresh={!supportsHistory}>
 		<main>
 			<Route

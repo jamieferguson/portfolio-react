@@ -13,13 +13,14 @@
 
 .page {
   transition: transform .3s ease-out;
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
 
 .page-enter {
-  transform: translateX(-100vw);
-  position: fixed;
+  transform: translateY(-100vh);
+  // position: fixed;
+  z-index: 1;
   // @extend %hide-scrollbar;
 
   nav {
@@ -28,13 +29,13 @@
 }
 
 .page-enter-active {
-  transform: translateX(0);
+  transform: translateY(0);
   // opacity: 1;
 }
 
 .page-exit {
-  transform: translateX(-100vw);
-  position: fixed;
+  transform: translateY(-100vh);
+  // position: fixed;
   // @extend %hide-scrollbar;
   // opacity: 0;
   // filter: brightness(50%);
@@ -50,13 +51,13 @@
 }
 
 .page--prev.page-enter {
-  transform: translateX(100vw);
+  transform: translateY(100vh);
 }
 
 .page--prev.page-enter-active {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .page--prev.page-exit {
-  transform: translateX(100vw);
+  transform: translateX(100vh);
 }
