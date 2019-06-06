@@ -237,10 +237,26 @@ header {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
+
+	.shorthand & {
+		background-color: $shorthand;
+	}
+
+	.viator & {
+		background-color: $viator
+	}
+
+	.tgm & {
+		background-color: $tgm
+	}
+
+	.aus & {
+		background-color: $aus
+	}
 }
 
 .background-image {
-	position: fixed;
+	position: absolute;
 	display: block;
 	top: 0;
 	left: 0;
@@ -253,25 +269,29 @@ header {
 	background-repeat: no-repeat;
 	z-index: -1;
 
+	.touch & {
+		opacity: .5;
+	}
+
+	.no-touch & {
+		position: fixed;
+	}
+
 
 	.shorthand & {
 		background-image: url('../Media/index-shorthand.jpg');
-		background-color: $shorthand;
 	}
 
 	.viator & {
 		background-image: url('../Media/index-viator.jpg');
-		background-color: $viator
 	}
 
 	.tgm & {
 		background-image: url('../Media/index-tgm.jpg');
-		background-color: $tgm
 	}
 
 	.aus & {
 		background-image: url('../Media/index-aus.jpg');
-		background-color: $aus
 	}
 }
 
