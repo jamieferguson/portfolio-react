@@ -230,13 +230,14 @@ header {
 }
 
 .background-wrapper {
-	clip: rect(0, auto, auto, 0);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	// clip: rect(0, auto, auto, 0);
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// width: 100%;
+	// height: 100%;
 	z-index: -1;
+	overflow: hidden;
 
 	.shorthand & {
 		background-color: $shorthand;
@@ -264,6 +265,7 @@ header {
 	min-width: 100vw;
 	height: 100vw;
 	min-height: 100vh;
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -273,9 +275,9 @@ header {
 		opacity: .5;
 	}
 
-	.no-touch & {
-		position: fixed;
-	}
+	// .no-touch & {
+	// 	position: fixed;
+	// }
 
 
 	.shorthand & {

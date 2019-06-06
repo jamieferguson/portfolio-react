@@ -7,7 +7,7 @@ function WorkList() {
 			<li className="shorthand">
 				<Link
 					to={{
-						pathname: '/work-shorthand',
+						pathname: '/shorthand',
 						state: { prev: true }
 					}}
 				>
@@ -24,7 +24,7 @@ function WorkList() {
 			<li className="viator">
 				<Link
 					to={{
-						pathname: '/work-viator',
+						pathname: '/viator',
 						state: { prev: true }
 					}}
 				>
@@ -41,7 +41,7 @@ function WorkList() {
 			<li className="tgm">
 				<Link
 					to={{
-						pathname: '/work-tgm',
+						pathname: '/the-global-mail',
 						state: { prev: true }
 					}}
 				>
@@ -58,7 +58,7 @@ function WorkList() {
 			<li className="aus">
 				<Link
 					to={{
-						pathname: '/work-aus',
+						pathname: '/the-australian',
 						state: { prev: true }
 					}}
 				>

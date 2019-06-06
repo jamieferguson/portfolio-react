@@ -35,10 +35,10 @@ const Portfolio = () => (
 									render={() => (
 										<Switch>
 											<Route exact path="/" component={Home} />
-											<Route path="/work-shorthand" component={WorkShorthand} />
-											<Route path="/work-viator" component={WorkViator} />
-											<Route path="/work-tgm" component={WorkTGM} />
-											<Route path="/work-aus" component={WorkAus} />
+											<Route path="/shorthand" component={WorkShorthand} />
+											<Route path="/viator" component={WorkViator} />
+											<Route path="/the-global-mail" component={WorkTGM} />
+											<Route path="/the-australian" component={WorkAus} />
 										</Switch>
 									)}
 								/>
