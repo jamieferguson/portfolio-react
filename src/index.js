@@ -21,29 +21,29 @@ const Portfolio = () => (
 				render={({ location }) => {
 					const { pathname } = location;
 					return (
-						<TransitionGroup>
-							<CSSTransition
-								key={pathname}
-								classNames={'page'}
-								timeout={{
-									enter: 150,
-									exit: 150
-								}}
-							>
-								<Route
-									location={location}
-									render={() => (
-										<Switch>
-											<Route exact path="/" component={Home} />
-											<Route path="/shorthand" component={WorkShorthand} />
-											<Route path="/viator" component={WorkViator} />
-											<Route path="/the-global-mail" component={WorkTGM} />
-											<Route path="/the-australian" component={WorkAus} />
-										</Switch>
-									)}
-								/>
-							</CSSTransition>
-						</TransitionGroup>
+						// <TransitionGroup>
+						// 	<CSSTransition
+						// 		key={pathname}
+						// 		classNames={'page'}
+						// 		timeout={{
+						// 			enter: 150,
+						// 			exit: 150
+						// 		}}
+						// 	>
+						<Route
+							location={location}
+							render={() => (
+								<Switch>
+									<Route exact path="/" component={Home} />
+									<Route path="/shorthand" component={WorkShorthand} />
+									<Route path="/viator" component={WorkViator} />
+									<Route path="/the-global-mail" component={WorkTGM} />
+									<Route path="/the-australian" component={WorkAus} />
+								</Switch>
+							)}
+						/>
+						// 	</CSSTransition>
+						// </TransitionGroup>
 					);
 				}}
 			/>

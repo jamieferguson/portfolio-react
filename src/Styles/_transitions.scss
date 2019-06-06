@@ -11,63 +11,63 @@
   }
 }
 
-.page {
-  transition: opacity .15s ease-out;
-  width: 100vw;
-  overflow-x: hidden;
-}
+// .page {
+//   transition: opacity .15s ease-out;
+//   width: 100vw;
+//   overflow-x: hidden;
+// }
 
-.page-enter {
-  // transform: translateY(-100vh);
-  // position: fixed;
-  z-index: 1;
-  // @extend %hide-scrollbar;
-  opacity: 0;
-  transition: opacity .15s ease-out .15s;
+// .page-enter {
+//   // transform: translateY(-100vh);
+//   // position: fixed;
+//   z-index: 1;
+//   // @extend %hide-scrollbar;
+//   opacity: 0;
+//   transition: opacity .15s ease-out .15s;
 
-  nav {
-    transform: translateY(-100px);
-  }
+//   nav {
+//     transform: translateY(-100px);
+//   }
 
-  .work-nav {
-    transform: translateX(-100px);
-  }
-}
+//   .work-nav {
+//     transform: translateX(-100px);
+//   }
+// }
 
-.page-enter-active {
-  // transform: translateY(0);
-  opacity: 1;
-}
+// .page-enter-active {
+//   // transform: translateY(0);
+//   opacity: 1;
+// }
 
-.page-exit {
-  // transform: translateY(-100vh);
-  // position: fixed;
-  // @extend %hide-scrollbar;
-  opacity: 1;
-  // filter: brightness(50%);
+// .page-exit {
+//   // transform: translateY(-100vh);
+//   // position: fixed;
+//   // @extend %hide-scrollbar;
+//   opacity: 1;
+//   // filter: brightness(50%);
 
-  nav {
-    transform: translateY(-100px);
-  }
+//   nav {
+//     transform: translateY(-100px);
+//   }
 
-  .work-nav {
-    transform: translateX(-100px);
-  }
-}
+//   .work-nav {
+//     transform: translateX(-100px);
+//   }
+// }
 
-.page-exit-active {
-  opacity: 0;
-  // filter: brightness(50%);
-}
+// .page-exit-active {
+//   opacity: 0;
+//   // filter: brightness(50%);
+// }
 
-.page--prev.page-enter {
-  // transform: translateY(100vh);
-}
+// .page--prev.page-enter {
+//   // transform: translateY(100vh);
+// }
 
-.page--prev.page-enter-active {
-  // transform: translateY(0);
-}
+// .page--prev.page-enter-active {
+//   // transform: translateY(0);
+// }
 
-.page--prev.page-exit {
-  // transform: translateX(100vh);
-}
+// .page--prev.page-exit {
+//   // transform: translateX(100vh);
+// }
