@@ -18,10 +18,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: $mono;
 	color: $text-color;
-	background-color: $text-color;
+	background-color: white;
 	font-size: 16px;
-	transition: background-color .25s ease-in-out;
-
 
 	@media(min-width: $breakpoint-md) {
 		font-size: 18px;
@@ -70,22 +68,6 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-
-	.shorthand & {
-		background-image: url('../Media/index-shorthand.jpg');
-	}
-
-	.viator & {
-		background-image: url('../Media/index-viator.jpg');
-	}
-
-	.tgm & {
-		background-image: url('../Media/index-tgm.jpg');
-	}
-
-	.aus & {
-		background-image: url('../Media/index-aus.jpg');
-	}
 }
 
 a,
@@ -271,9 +253,27 @@ header {
 	background-position: center center;
 	background-repeat: no-repeat;
 	z-index: -1;
+	opacity: 0;
+	animation: headerFade .3s ease-out forwards .15s;
 
 	.touch & {
 		opacity: .5;
+	}
+
+	.shorthand & {
+		background-image: url('../Media/index-shorthand.jpg');
+	}
+
+	.viator & {
+		background-image: url('../Media/index-viator.jpg');
+	}
+
+	.tgm & {
+		background-image: url('../Media/index-tgm.jpg');
+	}
+
+	.aus & {
+		background-image: url('../Media/index-aus.jpg');
 	}
 
 }

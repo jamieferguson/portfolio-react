@@ -71,3 +71,13 @@
 .page--prev.page-exit {
   // transform: translateX(100vh);
 }
+
+@keyframes headerFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
