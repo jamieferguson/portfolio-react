@@ -26,8 +26,8 @@ const Portfolio = () => (
 								key={pathname}
 								classNames={'page'}
 								timeout={{
-									enter: 150,
-									exit: 150
+									enter: 0,
+									exit: 0
 								}}
 							>
 								<Route

@@ -12,7 +12,7 @@
 }
 
 .page {
-  transition: opacity .15s ease-out;
+  // transition: opacity .15s ease-out;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -20,10 +20,10 @@
 .page-enter {
   // transform: translateY(-100vh);
   // position: fixed;
-  z-index: 1;
+  // z-index: 1;
   // @extend %hide-scrollbar;
-  opacity: 0.01;
-  transition: opacity .15s ease-out .15s;
+  // opacity: 0.01;
+  // transition: opacity .15s ease-out .15s;
 
   nav {
     transform: translateY(-$workNav-Width);
@@ -36,14 +36,14 @@
 
 .page-enter-active {
   // transform: translateY(0);
-  opacity: 1;
+  // opacity: 1;
 }
 
 .page-exit {
   // transform: translateY(-100vh);
   // position: fixed;
   // @extend %hide-scrollbar;
-  opacity: 1;
+  // opacity: 1;
   // filter: brightness(50%);
 
   nav {
@@ -56,7 +56,7 @@
 }
 
 .page-exit-active {
-  opacity: 0.01;
+  // opacity: 0.01;
   // filter: brightness(50%);
 }
 
