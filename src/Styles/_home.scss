@@ -15,10 +15,10 @@
       // margin-top: $navHeight;
       height: calc(35vh + #{$navHeight});
       min-height: calc(35vh + #{$navHeight});
-    }
 
-    h1 {
-      margin-top: $navHeight / 2;
+      h1 {
+        margin-top: $navHeight / 2;
+      }
     }
   }
 
@@ -81,8 +81,11 @@
       overflow-y: auto;
     }
 
-    h5 {
-      display: none;
+
+    @media (orientation: landscape) {
+      h5 {
+        display: none;
+      }
     }
 
     ul {

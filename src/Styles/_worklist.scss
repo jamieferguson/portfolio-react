@@ -49,13 +49,12 @@
 
         .text {
           display: inline-block;
-          // padding: 5vh 20px;
+          width: 90%;
           font-size: 120%;
           pointer-events: none;
 
           @media (min-width: $breakpoint-sm) {
             max-width: 80%;
-            // padding: 10vh 20px;
           }
 
           h3,
@@ -126,6 +125,7 @@
       background-size: cover;
 
       .background-overlay {
+        background-color: $shorthand-fade;
 
         .touch &,
         &:hover,
@@ -143,6 +143,7 @@
       background-size: cover;
 
       .background-overlay {
+        background-color: $viator-fade;
 
         .touch &,
         &:hover,
@@ -160,6 +161,7 @@
       background-size: cover;
 
       .background-overlay {
+        background-color: $tgm-fade;
 
         .touch &,
         &:hover,
@@ -177,6 +179,7 @@
       background-size: cover;
 
       .background-overlay {
+        background-color: $aus-fade;
 
         .touch &,
         &:hover,
@@ -187,14 +190,6 @@
         }
       }
     }
-
-    // &.ninemsn {
-
-    //   &:hover,
-    //   &:focus {
-    //     background-color: $ninemsn-fade;
-    //   }
-    // }
   }
 
   .work & {

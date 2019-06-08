@@ -197,8 +197,6 @@ header {
 			opacity: .7;
 			z-index: 2;
 
-
-
 			.shorthand & {
 				background-color: $shorthand;
 			}
@@ -246,8 +244,8 @@ header {
 	left: 0;
 	width: 100vw;
 	min-width: 100vw;
-	height: 100vw;
-	min-height: 100vh;
+	height: 75vh;
+	min-height: 75vh;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
