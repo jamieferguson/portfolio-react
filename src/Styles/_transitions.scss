@@ -26,11 +26,11 @@
   transition: opacity .15s ease-out .15s;
 
   nav {
-    transform: translateY(-100px);
+    transform: translateY(-$workNav-Width);
   }
 
   .work-nav {
-    transform: translateX(-100px);
+    transform: translateX(-$workNav-Width);
   }
 }
 
@@ -47,11 +47,11 @@
   // filter: brightness(50%);
 
   nav {
-    transform: translateY(-100px);
+    transform: translateY(-$workNav-Width);
   }
 
   .work-nav {
-    transform: translateX(-100px);
+    transform: translateX(-$workNav-Width);
   }
 }
 

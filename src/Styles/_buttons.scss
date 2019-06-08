@@ -7,6 +7,7 @@
   margin: 20px auto;
   font-weight: bold;
   font-size: 110%;
+  transition: background-color .15s ease-in-out;
 
   .shorthand & {
     background-color: $shorthand;

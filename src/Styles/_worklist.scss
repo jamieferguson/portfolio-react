@@ -13,16 +13,13 @@
     display: flex;
     flex-direction: column;
 
-    // .work & {
-    //   @media (orientation: landscape) {
-    //     display: flex;
-    //   }
-    // }
-
     li {
       flex: 1;
       height: 30vh;
       min-height: 30vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
 
       a,
       a:visited {
@@ -34,7 +31,7 @@
         width: 100%;
         position: relative;
         overflow: hidden;
-        background-color: rgba(black, 0.3);
+        background-color: rgba(black, 0.35);
         box-shadow: inset 0 8px 10px -10px rgba(black, .4);
         transition: background 100ms ease-in-out;
 
@@ -89,11 +86,12 @@
       }
     }
 
-    // .background-image {
-    //   width: 50%;
-    // }
+    .background-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
 
-    .background-wrapper {
       &:before {
         content: '';
         position: absolute;
@@ -101,18 +99,33 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(black, 0.3);
-        box-shadow: inset 0 8px 10px -10px rgba(black, .4);
         transition: background 100ms ease-in-out;
+      }
+
+      .shorthand & {
+        background-image: url('../Media/index-shorthand.jpg');
+      }
+
+      .viator & {
+        background-image: url('../Media/index-viator.jpg');
+      }
+
+      .tgm & {
+        background-image: url('../Media/index-tgm.jpg');
+      }
+
+      .aus & {
+        background-image: url('../Media/index-aus.jpg');
       }
     }
 
-    // .background-image {
-    //   filter: blur(10px);
-    // }
 
     .shorthand {
-      .background-wrapper {
+      background-color: $shorthand;
+      background-image: url('../Media/index-shorthand.jpg');
+      background-size: cover;
+
+      .background-overlay {
 
         .touch &,
         &:hover,
@@ -125,7 +138,11 @@
     }
 
     .viator {
-      .background-wrapper {
+      background-color: $viator;
+      background-image: url('../Media/index-viator.jpg');
+      background-size: cover;
+
+      .background-overlay {
 
         .touch &,
         &:hover,
@@ -138,7 +155,11 @@
     }
 
     .tgm {
-      .background-wrapper {
+      background-color: $tgm;
+      background-image: url('../Media/index-tgm.jpg');
+      background-size: cover;
+
+      .background-overlay {
 
         .touch &,
         &:hover,
@@ -151,7 +172,11 @@
     }
 
     .aus {
-      .background-wrapper {
+      background-color: $aus;
+      background-image: url('../Media/index-aus.jpg');
+      background-size: cover;
+
+      .background-overlay {
 
         .touch &,
         &:hover,

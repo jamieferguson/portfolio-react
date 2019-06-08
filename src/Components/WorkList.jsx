@@ -16,9 +16,7 @@ function WorkList() {
 						<h4>Editorial & UX Design</h4>
 						<div className="date">2014-19</div>
 					</div>
-					<div className="background-wrapper">
-						<div className="background-image" />
-					</div>
+					<div className="background-overlay" />
 				</Link>
 			</li>
 			<li className="viator">
@@ -33,9 +31,7 @@ function WorkList() {
 						<h4>UX Design</h4>
 						<div className="date">2013</div>
 					</div>
-					<div className="background-wrapper">
-						<div className="background-image" />
-					</div>
+					<div className="background-overlay" />
 				</Link>
 			</li>
 			<li className="tgm">
@@ -50,9 +46,7 @@ function WorkList() {
 						<h4>Data Vis & Editorial Design</h4>
 						<div className="date">2012</div>
 					</div>
-					<div className="background-wrapper">
-						<div className="background-image" />
-					</div>
+					<div className="background-overlay" />
 				</Link>
 			</li>
 			<li className="aus">
@@ -67,9 +61,7 @@ function WorkList() {
 						<h4>Editorial & UX Design</h4>
 						<div className="date">2011</div>
 					</div>
-					<div className="background-wrapper">
-						<div className="background-image" />
-					</div>
+					<div className="background-overlay" />
 				</Link>
 			</li>
 		</ul>

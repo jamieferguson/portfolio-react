@@ -22,6 +22,7 @@ body {
 	font-size: 16px;
 	transition: background-color .25s ease-in-out;
 
+
 	@media(min-width: $breakpoint-md) {
 		font-size: 18px;
 	}
@@ -33,8 +34,6 @@ body {
 	@media(min-width: $breakpoint-xl) {
 		font-size: 22px;
 	}
-
-	// @extend %scrollbar;
 
 	&.shorthand {
 		background-color: $shorthand;
@@ -51,6 +50,8 @@ body {
 	&.aus {
 		background-color: $aus;
 	}
+
+
 }
 
 *,
@@ -62,6 +63,29 @@ body {
 #portfolio {
 	width: 100%;
 	overflow-x: hidden;
+
+}
+
+.page {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+
+	.shorthand & {
+		background-image: url('../Media/index-shorthand.jpg');
+	}
+
+	.viator & {
+		background-image: url('../Media/index-viator.jpg');
+	}
+
+	.tgm & {
+		background-image: url('../Media/index-tgm.jpg');
+	}
+
+	.aus & {
+		background-image: url('../Media/index-aus.jpg');
+	}
 }
 
 a,
@@ -170,23 +194,6 @@ header {
 		color: $white;
 		box-shadow: inset 0 -10px 15px -15px black;
 
-
-		.shorthand & {
-			background: $shorthand;
-		}
-
-		.viator & {
-			background: $viator;
-		}
-
-		.tgm & {
-			background: $tgm;
-		}
-
-		.aus & {
-			background: $aus;
-		}
-
 		&:after,
 		&:before {
 			content: '';
@@ -230,12 +237,6 @@ header {
 }
 
 .background-wrapper {
-	// clip: rect(0, auto, auto, 0);
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	// width: 100%;
-	// height: 100%;
 	z-index: -1;
 	overflow: hidden;
 
@@ -275,43 +276,20 @@ header {
 		opacity: .5;
 	}
 
-	// .no-touch & {
-	// 	position: fixed;
-	// }
-
-
-	.shorthand & {
-		background-image: url('../Media/index-shorthand.jpg');
-	}
-
-	.viator & {
-		background-image: url('../Media/index-viator.jpg');
-	}
-
-	.tgm & {
-		background-image: url('../Media/index-tgm.jpg');
-	}
-
-	.aus & {
-		background-image: url('../Media/index-aus.jpg');
-	}
 }
 
 .work-container {
-	background-color: white;
+	section {
+		background-color: white;
+	}
 }
 
 #intro {
 	display: block;
 	text-align: center;
-	width: 90%;
-	margin: 5% auto 0;
+	padding: 5%;
 
-	@media (min-width: $breakpoint-sm) {
-		width: 65%;
-		max-width: 1000px;
-		min-width: 290px;
-	}
+
 
 	h3 {
 		font-size: 240%;
@@ -333,10 +311,19 @@ header {
 	p {
 		font-size: 110%;
 		line-height: 1.4;
+		margin-left: auto;
+		margin-right: auto;
 
 		&:first-of-type {
 			font-weight: bold;
 			font-size: 140%;
+		}
+
+		@media (min-width: $breakpoint-sm) {
+			padding-left: 15%;
+			padding-right: 15%;
+			max-width: 1000px;
+			min-width: 290px;
 		}
 	}
 
@@ -354,9 +341,6 @@ header {
 	img {
 		width: 100%;
 		height: auto;
-		// max-width: 1400px;
-		// min-width: 300px;
-		// margin: 0 auto 1rem;
 	}
 
 	.bordered {
