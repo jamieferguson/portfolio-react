@@ -85,7 +85,7 @@ function WorkTGM() {
 							<h5>Other Projects (that are still live!)</h5>
 							<ul>
 								<li>
-									<a href="http://pharma.theglobalmail.org/" target="_blank" rel="noopener noreferrer">
+									<a href="https://tgm-archive.github.io/pharma/" target="_blank" rel="noopener noreferrer">
 										<div className="overlay">
 											<span>The Great Pill Pu$h</span>
 											<div className="btn" href="http://pharma.theglobalmail.org/" target="_blank">
@@ -96,7 +96,7 @@ function WorkTGM() {
 									</a>
 								</li>
 								<li>
-									<a href="http://bulga.theglobalmail.org/" target="_blank" rel="noopener noreferrer">
+									<a href="https://tgm-archive.github.io/bulga/" target="_blank" rel="noopener noreferrer">
 										<div className="overlay">
 											<span>The Town That Wouldn’t Disappear</span>
 											<div className="btn" href="http://bulga.theglobalmail.org/" target="_blank">
@@ -106,7 +106,7 @@ function WorkTGM() {
 										<img src={require('../Media/work-tgm-bulga.jpg')} alt="" />
 									</a>
 								</li>
-								<li>
+								{/* <li>
 									<a href="http://rockart.theglobalmail.org/" target="_blank" rel="noopener noreferrer">
 										<div className="overlay">
 											<span>Rock Art At Risk</span>
@@ -127,7 +127,7 @@ function WorkTGM() {
 										</div>
 										<img src={require('../Media/work-tgm-alz.jpg')} alt="" />
 									</a>
-								</li>
+								</li> */}
 							</ul>
 							<p>Unfortunately these are the only projects that are still live from my time at The Global Mail.</p>
 						</section>
