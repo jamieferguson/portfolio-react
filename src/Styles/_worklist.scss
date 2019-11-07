@@ -1,22 +1,13 @@
 #work {
-  border-top: 1px solid #eee;
-  text-align: center;
-
-  h5 {
-    background-color: white;
-  }
-
   ul {
-    box-shadow: inset 0 20px 20px -20px black;
-    text-align: center;
     list-style: none;
     display: flex;
     flex-direction: column;
 
     li {
       flex: 1;
-      height: 30vh;
-      min-height: 30vh;
+      height: 45vh;
+      min-height: 45vh;
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
@@ -25,14 +16,13 @@
       a:visited {
         z-index: 1;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-end;
         height: 100%;
         width: 100%;
         position: relative;
         overflow: hidden;
         background-color: rgba(black, 0.35);
-        box-shadow: inset 0 8px 10px -10px rgba(black, .4);
+        box-shadow: inset 0 8px 10px -10px rgba(black, 0.4);
         transition: background 100ms ease-in-out;
 
         .icon {
@@ -49,12 +39,11 @@
 
         .text {
           display: inline-block;
-          width: 90%;
           font-size: 120%;
           pointer-events: none;
-
-          @media (min-width: $breakpoint-sm) {
-            max-width: 80%;
+          margin: $padding-x;
+          @media (orientation: landscape) and (min-height: 500px) {
+            margin: $padding-x-lg;
           }
 
           h3,
@@ -63,23 +52,23 @@
           }
 
           h3 {
-            font-family: $title;
             font-weight: 900;
             text-transform: uppercase;
-            letter-spacing: .3em;
-            margin-bottom: .5em;
-            font-size: calc(100% + .25vw);
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5em;
+            font-size: calc(0.8em + 0.25vmax);
           }
 
           h4 {
             font-weight: normal;
-            margin-bottom: .5em;
-            font-size: calc(80% + .1vw);
+            margin-bottom: 0;
+            font-size: calc(0.6em + 0.1vmax);
           }
 
           .date {
-            opacity: .7;
-            font-size: calc(80% + .1vw);
+            opacity: 0.7;
+            font-size: calc(0.6em + 0.1vmax);
+            font-family: $font-secondary;
           }
         }
       }
@@ -89,10 +78,17 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      opacity: 0.7;
       z-index: -1;
+      transition: opacity 0.15s ease-in-out;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -102,92 +98,59 @@
       }
 
       .shorthand & {
-        background-image: url('../Media/index-shorthand.jpg');
+        background-image: url("../Media/index-shorthand.jpg");
       }
 
       .viator & {
-        background-image: url('../Media/index-viator.jpg');
+        background-image: url("../Media/index-viator.jpg");
       }
 
       .tgm & {
-        background-image: url('../Media/index-tgm.jpg');
+        background-image: url("../Media/index-tgm.jpg");
       }
 
       .aus & {
-        background-image: url('../Media/index-aus.jpg');
+        background-image: url("../Media/index-aus.jpg");
       }
     }
 
-
     .shorthand {
       background-color: $shorthand;
-      background-image: url('../Media/index-shorthand.jpg');
+      background-image: url("../Media/index-shorthand.jpg");
       background-size: cover;
 
       .background-overlay {
-        background-color: $shorthand-fade;
-
-        .touch &,
-        &:hover,
-        &:focus {
-          &:before {
-            background-color: $shorthand-fade;
-          }
-        }
+        background-color: $shorthand;
       }
     }
 
     .viator {
       background-color: $viator;
-      background-image: url('../Media/index-viator.jpg');
+      background-image: url("../Media/index-viator.jpg");
       background-size: cover;
 
       .background-overlay {
-        background-color: $viator-fade;
-
-        .touch &,
-        &:hover,
-        &:focus {
-          &:before {
-            background-color: $viator-fade;
-          }
-        }
+        background-color: $viator;
       }
     }
 
     .tgm {
       background-color: $tgm;
-      background-image: url('../Media/index-tgm.jpg');
+      background-image: url("../Media/index-tgm.jpg");
       background-size: cover;
 
       .background-overlay {
-        background-color: $tgm-fade;
-
-        .touch &,
-        &:hover,
-        &:focus {
-          &:before {
-            background-color: $tgm-fade;
-          }
-        }
+        background-color: $tgm;
       }
     }
 
     .aus {
       background-color: $aus;
-      background-image: url('../Media/index-aus.jpg');
+      background-image: url("../Media/index-aus.jpg");
       background-size: cover;
 
       .background-overlay {
-        background-color: $aus-fade;
-
-        .touch &,
-        &:hover,
-        &:focus {
-          &:before {
-            background-color: $aus-fade;
-          }
-        }
+        background-color: $aus;
       }
     }
   }
