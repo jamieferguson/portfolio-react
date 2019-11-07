@@ -1,7 +1,9 @@
 footer {
-  background-color: white;
-  text-align: center;
-  padding: 2% 0;
+  padding: 2% $padding-x;
   color: $text-color-alt;
   font-size: 12px;
+  @media (orientation: landscape) {
+    padding-left: $padding-x-lg;
+    padding-right: $padding-x-lg;
+  }
 }
