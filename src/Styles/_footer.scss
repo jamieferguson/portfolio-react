@@ -1,8 +1,8 @@
 footer {
-  padding: 2% $padding-x;
+  padding: $padding-y $padding-x 0;
   color: $text-color-alt;
   font-size: 12px;
-  @media (orientation: landscape) {
+  @media screen and (orientation: landscape) {
     padding-left: $padding-x-lg;
     padding-right: $padding-x-lg;
   }

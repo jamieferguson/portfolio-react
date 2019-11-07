@@ -1,5 +1,4 @@
 %hide-scrollbar {
-
   /* width */
   &::-webkit-scrollbar {
     width: 0;
@@ -11,11 +10,11 @@
   }
 }
 
-.page {
-  // transition: opacity .15s ease-out;
-  width: 100vw;
-  overflow-x: hidden;
-}
+// .page {
+//   // transition: opacity .15s ease-out;
+//   width: 100vw;
+//   overflow-x: hidden;
+// }
 
 .page-enter {
   // transform: translateY(-100vh);

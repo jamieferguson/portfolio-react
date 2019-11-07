@@ -8,6 +8,10 @@
       flex: 1;
       height: 45vh;
       min-height: 45vh;
+      @media screen and (orientation: portrait) {
+        height: 31vh;
+        min-height: 31vh;
+      }
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
@@ -42,7 +46,7 @@
           font-size: 120%;
           pointer-events: none;
           margin: $padding-x;
-          @media (orientation: landscape) and (min-height: 500px) {
+          @media screen and (orientation: landscape) and (min-height: 500px) {
             margin: $padding-x-lg;
           }
 
@@ -84,7 +88,7 @@
 
       &:hover,
       &:focus {
-        opacity: 1;
+        opacity: 0.9;
       }
 
       &:before {

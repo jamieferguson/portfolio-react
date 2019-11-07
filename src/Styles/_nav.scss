@@ -2,19 +2,19 @@
   display: block;
   position: absolute;
   z-index: 10;
-  top: 0;
-  left: calc(#{$padding-x} - 15px);
-  right: $padding-x;
+  top: 20px;
+  left: calc(#{$padding-x} - 15px + #{$page-padding});
   box-shadow: 0 1px 0 rgba(black, 0.2);
   height: $navHeight;
   transition: transform 0.15s ease-in-out;
-  @media (orientation: landscape) and (min-height: 500px) {
-    left: calc(#{$padding-x-lg} - 15px);
+  @media screen and (orientation: landscape) and (min-height: 500px) {
+    margin-left: -15px;
   }
 
   ul {
     li {
       display: inline-block;
+      margin-right: 1vw;
 
       a,
       a:visited {
@@ -42,11 +42,14 @@
 
 .work-nav {
   position: fixed;
-  top: 15px;
-  left: 15px;
+  top: $page-padding + 10px;
+  left: $page-padding + 10px;
   z-index: 1;
   transition: transform 0.15s ease-in-out;
-
+  @media screen and (min-width: $breakpoint-sm) {
+    top: $page-padding-lg + 10px;
+    left: $page-padding-lg + 10px;
+  }
   &:hover {
     transform: translateX(-2px);
   }
