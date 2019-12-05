@@ -39,22 +39,76 @@ const WorkShorthand = () => (
             </div>
           </header>
           <section id="intro">
-            <p>Shorthand is a Brisbane based start-up who developed webapps allowing writers and designers to easily create stunning editorial features with zero development.</p>
             <p>
-              In my role as 'Project Designer' I was design lead for all client projects. I would be involved from initial pitch stage, then developing the 'theme' as well as wireframing and designing any custom features as required.
+              <a href="http://shorthand.com/" target="_blank">
+                Shorthand
+              </a>{" "}
+              is a Brisbane based start-up who developed webapps allowing storytellers to easily create stunning editorial features with zero development.
             </p>
-            <p>I also worked as part of the product team on developing new features and improvements based on clients needs, as well as the sales team in advising clients about design and development.</p>
+            <p>
+              Initially my role was 'Project Designer' where I was the design lead for all client projects. I would be involved from initial pitch stage, then developing the 'theme' as well as wireframing and designing any custom
+              features as required.
+            </p>
+            <p>I transitioned to work as part of the product team as 'Product Designer' on developing new features and improvements based on clients needs, as well as the sales team in advising clients about design and development.</p>
             <p>Everything I designed was fully-responsive and almost entirely designed 'in the browser'.</p>
           </section>
-          <section className="example screens">
+          <section id="skills">
+            <h5>Primary skills used</h5>
+            <ul>
+              <li>Ideation</li>
+              <li>Prototyping</li>
+              <li>UI Design</li>
+              <li>UI Development (SCSS)</li>
+            </ul>
+          </section>
+          <section className="example grid">
+            <h5>Shorthand - Main App screens</h5>
+            <ul>
+              <li>
+                <img src={require("../Media/work-sh-dash-01.jpg")} alt="" />
+              </li>
+              <li>
+                <img src={require("../Media/work-sh-dash-02.jpg")} alt="" />
+              </li>
+              <li>
+                <img src={require("../Media/work-sh-editor-01.jpg")} alt="" />
+              </li>
+              <li>
+                <img src={require("../Media/work-sh-editor-02.jpg")} alt="" />
+              </li>
+            </ul>
+
+            <p>The Shorthand app has two main 'views' - the dashboard, where all stories and collections live, and the editor where the user can create their stories.</p>
+          </section>
+
+          <section className="example grid">
+            <h5>Shorthand Social - Various screens</h5>
+            <ul>
+              <li>
+                <img src={require("../Media/work-sh-dash-01.jpg")} alt="" />
+              </li>
+              <li>
+                <img src={require("../Media/work-sh-dash-02.jpg")} alt="" />
+              </li>
+              <li>
+                <img src={require("../Media/work-sh-editor-01.jpg")} alt="" />
+              </li>
+              <li>
+                <img src={require("../Media/work-sh-editor-02.jpg")} alt="" />
+              </li>
+            </ul>
+
+            <p>'Shorthand Social' was a fairly short lived app that was similar to the main Shorthand app but focussed on letting more casual storytellers easily create and share their stories.</p>
+          </section>
+          {/* <section className="example screens">
             <h5>Shorthand Homepage</h5>
             <img src={require("../Media/work-shorthand-01.jpg")} alt="Shorthand Homepage" />
             <p>The Shorthand website is the main marketing tool for the product. I designed and developed it, as well as had input on the content.</p>
             <a className="btn" href="http://www.shorthand.com" target="_blank" rel="noopener noreferrer">
               View Live
             </a>
-          </section>
-          <section className="example grid">
+          </section> */}
+          {/* <section className="example grid">
             <h5>Shorthand Themes</h5>
             <ul>
               <li>
@@ -125,7 +179,7 @@ const WorkShorthand = () => (
               </li>
             </ul>
             <p>A selection of stories using different client themes that I designed & developed as Project Designer.</p>
-          </section>
+          </section> */}
         </div>
         <Footer />
       </main>

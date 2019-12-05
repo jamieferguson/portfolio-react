@@ -30,7 +30,7 @@ function WorkAus() {
               <div className="Header--inner">
                 <h1>The Australian</h1>
                 <h2>
-                  Editorial & Interaction Design <span>/ 2011</span>
+                  Editorial Design & Data Visualiation <span>/ 2011</span>
                 </h2>
               </div>
               <div className="background-wrapper">
@@ -38,48 +38,81 @@ function WorkAus() {
               </div>
             </header>
             <section id="intro">
-              <p>The Global Mail was a short-lived, not-for-profit news organisation that focussed on long-form storytelling & data-driven journalism.</p>
-              <p>
-                My role was to lead the design of editorial & data-visualisation projects. As part of a small team I was involved in all aspects of the project - from research, concepts & UX, through to cleaning data - working closely
-                with both developers & editorial staff.
-              </p>
-              <p>As The Global Mail ceased operations some time ago only a few of these projects remain online. I have linked to them where possible.</p>
+              <p>As the lead digital designer I was in charge of designing all editorial features for The Australian's digital products.</p>
+              <p>This included the usual day-to-day work of designing templates and standard editorial features, as well as larger project-based features.</p>
+              <p>The most interesting projects were data visualiation oriented, especially the 'Your School' project that looked at NAPLAN data and made it easy to compare various schools.</p>
+            </section>
+            <section id="skills">
+              <h5>Primary skills used</h5>
+              <ul>
+                <li>Ideation</li>
+                <li>Editorial Design</li>
+                <li>Data Visualisation</li>
+                <li>UI Design</li>
+              </ul>
             </section>
             <section className="example grid">
-              <h5>Behind The Wire</h5>
+              <h5>Your School</h5>
               <ul>
                 <li>
-                  <img src={require("../Media/work-tgm-wire-01.jpg")} alt="" />
+                  <img src={require("../Media/work-aus-yourschool-01.jpg")} alt="" />
                 </li>
                 <li>
-                  <img src={require("../Media/work-tgm-wire-03.jpg")} alt="" />
+                  <img src={require("../Media/work-aus-yourschool-02.jpg")} alt="" />
                 </li>
                 <li>
-                  <img src={require("../Media/work-tgm-wire-02.jpg")} alt="" />
+                  <img src={require("../Media/work-aus-yourschool-02a.jpg")} alt="" />
+                </li>
+                {/* <li>
+                  <img src={require("../Media/work-aus-yourschool-03.jpg")} alt="" />
+                </li> */}
+                <li>
+                  <img src={require("../Media/work-aus-yourschool-04.jpg")} alt="" />
                 </li>
                 <li>
-                  <img src={require("../Media/work-tgm-wire-04.jpg")} alt="" />
+                  <img src={require("../Media/work-aus-yourschool-05.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-aus-yourschool-06.jpg")} alt="" />
                 </li>
               </ul>
-              <ul className="quarter">
+              <p>'Your School' was the first project of it's kind in Australia that took all the available NAPLAN data and made it easy to rank and compare schools. Unfortunately this tool is no longer live.</p>
+            </section>
+            <section className="example grid">
+              <h5>Federal Election 2013 - Homepage</h5>
+              <ul>
                 <li>
-                  <img src={require("../Media/work-tgm-wire-mob-01.jpg")} alt="" />
+                  <img src={require("../Media/work-aus-election-01.jpg")} alt="" />
                 </li>
                 <li>
-                  <img src={require("../Media/work-tgm-wire-mob-03.jpg")} alt="" />
-                </li>
-                <li>
-                  <img src={require("../Media/work-tgm-wire-mob-02.jpg")} alt="" />
-                </li>
-                <li>
-                  <img src={require("../Media/work-tgm-wire-mob-04.jpg")} alt="" />
+                  <img src={require("../Media/work-aus-election-02.jpg")} alt="" />
                 </li>
               </ul>
-              <p>
-                'Behind The Wire' used data about incidents in detention gathered via FOI requests & aimed to present them in a meaningful way. Each square represents one incident. A user can easily sort or browse the incidents as well
-                as learn more by pressing each 'square'. Rather than try to present the data with any bias we created a way for users to tell us what they thought was the most important. To do this they could 'flag' an incident, which
-                would increase the brightness of that incident on the grid.
-              </p>
+              <p>With politics being at the core of The Australian's remit, federal elections are one of the most important events that they cover. I was in charge of designing the election tools for the site homepage.</p>
+            </section>
+            <section className="example grid">
+              <h5>Federal Election 2013 - App</h5>
+              <ul>
+                <li>
+                  <img src={require("../Media/work-aus-electionapp-01.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-aus-electionapp-02.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-aus-electionapp-03.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-aus-electionapp-04.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-aus-electionapp-05.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-aus-electionapp-06.jpg")} alt="" />
+                </li>
+              </ul>
+              <p>The main feature we built for the election was an app that allowed you to view live election data for any seat in the country.</p>
             </section>
           </div>
         </div>

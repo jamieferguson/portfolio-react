@@ -49,6 +49,14 @@ function WorkViator() {
               <p>As a firm believer that UX doesn't end when wireframes are signed off I also contributed to visual design and development wherever possible.</p>
               <p>During my short time there I worked on a major redesign of their iOS and Android apps as well as their main mobile website. At last count the iOS app has been downloaded over 1 million times.</p>
             </section>
+            <section id="skills">
+              <h5>Primary skills used</h5>
+              <ul>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>UI Design</li>
+              </ul>
+            </section>
             <section className="example screens">
               <h5>Viator iPhone iOS7 App Redesign</h5>
               <div className="item bordered">

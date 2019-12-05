@@ -45,6 +45,15 @@ function WorkTGM() {
               </p>
               <p>As The Global Mail ceased operations some time ago only a few of these projects remain online. I have linked to them where possible.</p>
             </section>
+            <section id="skills">
+              <h5>Primary skills used</h5>
+              <ul>
+                <li>Ideation</li>
+                <li>Data Visualisation</li>
+                <li>Illustration</li>
+                <li>UI Development (SCSS)</li>
+              </ul>
+            </section>
             <section className="example grid">
               <h5>Behind The Wire</h5>
               <ul>
@@ -82,7 +91,7 @@ function WorkTGM() {
               </p>
             </section>
             <section className="example grid">
-              <h5>Other Projects (that are still live!)</h5>
+              <h5>Projects that are still live!</h5>
               <ul>
                 <li>
                   <a href="https://tgm-archive.github.io/pharma/" target="_blank" rel="noopener noreferrer">
@@ -130,6 +139,54 @@ function WorkTGM() {
 								</li> */}
               </ul>
               <p>Unfortunately these are the only projects that are still live from my time at The Global Mail.</p>
+            </section>
+            <section className="example grid">
+              <h5>Party Lines</h5>
+              <ul>
+                <li>
+                  <img src={require("../Media/work-tgm-partylines-01.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-tgm-partylines-02.jpg")} alt="" />
+                </li>
+              </ul>
+
+              <p>'Party Lines' attempted to look at the way politicians use language to frame certain topics. We took Hansard data and made it easy to compare the usage of certain words and phrases over time.</p>
+            </section>
+            <section className="example grid">
+              <h5>Poli/talk</h5>
+              <ul>
+                <li>
+                  <img src={require("../Media/work-tgm-politalk-01.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-tgm-politalk-02.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-tgm-politalk-03.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-tgm-politalk-04.jpg")} alt="" />
+                </li>
+              </ul>
+
+              <p>
+                Expanding on 'Party Lines', the 'Poli/talk' project attempted to allow further investigation of Hansard data by making it easy for journalists and the public explore the words used by politicians in partliament.
+                Unfortunately this never got beyong concept stage.
+              </p>
+            </section>
+            <section className="example grid">
+              <h5>Rock Art at Risk</h5>
+              <ul>
+                <li>
+                  <img src={require("../Media/work-tgm-rockart-01.jpg")} alt="" />
+                </li>
+                <li>
+                  <img src={require("../Media/work-tgm-rockart-02.jpg")} alt="" />
+                </li>
+              </ul>
+
+              <p>'Rock Art at Risk' looked at the sites of indiginous rock art and overlayed that with data from mines and mining licenses.</p>
             </section>
           </div>
         </div>
