@@ -59,6 +59,11 @@ body {
   box-sizing: inherit;
 }
 
+.page {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 #portfolio {
   width: 100%;
   overflow-x: hidden;
