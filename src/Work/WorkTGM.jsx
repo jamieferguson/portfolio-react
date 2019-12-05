@@ -41,7 +41,7 @@ function WorkTGM() {
               <p>The Global Mail was a short-lived, not-for-profit news organisation that focussed on long-form storytelling & data-driven journalism.</p>
               <p>
                 My role was to lead the design of editorial & data-visualisation projects. As part of a small team I was involved in all aspects of the project - from research, concepts & UX, through to cleaning data - working closely
-                with both developers & editorial staff.
+                with developers, the amazing journalists & editorial staff.
               </p>
               <p>As The Global Mail ceased operations some time ago only a few of these projects remain online. I have linked to them where possible.</p>
             </section>

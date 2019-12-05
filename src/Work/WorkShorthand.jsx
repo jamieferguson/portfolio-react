@@ -49,8 +49,10 @@ const WorkShorthand = () => (
               Initially my role was 'Project Designer' where I was the design lead for all client projects. I would be involved from initial pitch stage, then developing the 'theme' as well as wireframing and designing any custom
               features as required.
             </p>
-            <p>I transitioned to work as part of the product team as 'Product Designer' on developing new features and improvements based on clients needs, as well as the sales team in advising clients about design and development.</p>
-            <p>Everything I designed was fully-responsive and almost entirely designed 'in the browser'.</p>
+            <p>
+              I then transitioned to work as part of the product team as 'Product Designer' on developing new features and improvements. In this role I worked closely with all parts of the business - development, support, sales and
+              management. And as it was a start-up I was also involved in a broad range of activities - from support through to product planning.
+            </p>
           </section>
           <section id="skills">
             <h5>Primary skills used</h5>
