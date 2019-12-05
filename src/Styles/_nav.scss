@@ -52,11 +52,14 @@
   }
   &:hover {
     transform: translateX(-2px);
+    .btn {
+      box-shadow: 0 0 0 4px #fff, 0 3px 15px rgba(black, 0.8);
+    }
   }
 
   .btn {
     margin: auto;
-    box-shadow: 0 0 0 4px white;
+    box-shadow: 0 0 0 4px #fff, 0 3px 10px rgba(black, 0.4);
     width: $workNav-Width;
     height: $workNav-Width;
     border-radius: 50%;
