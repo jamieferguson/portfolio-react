@@ -85,9 +85,9 @@ function WorkTGM() {
                 </li>
               </ul>
               <p>
-                'Behind The Wire' used data about incidents in detention gathered via FOI requests & aimed to present them in a meaningful way. Each square represents one incident. A user can easily sort or browse the incidents as well
-                as learn more by pressing each 'square'. Rather than try to present the data with any bias we created a way for users to tell us what they thought was the most important. To do this they could 'flag' an incident, which
-                would increase the brightness of that incident on the grid.
+                'Behind The Wire' used data about incidents in detention gathered via FOI requests by the team at <a href="http://detentionlogs.com.au/">Detention Logs</a> & aimed to present them in a meaningful way. Each square
+                represents one incident. A user can easily sort or browse the incidents as well as learn more by pressing each 'square'. Rather than try to present the data with any bias we created a way for users to tell us what they
+                thought was the most important. To do this they could 'flag' an incident, which would increase the brightness of that incident on the grid.
               </p>
             </section>
             <section className="example grid">
@@ -172,7 +172,7 @@ function WorkTGM() {
 
               <p>
                 Expanding on 'Party Lines', the 'Poli/talk' project attempted to allow further investigation of Hansard data by making it easy for journalists and the public explore the words used by politicians in partliament.
-                Unfortunately this never got beyong concept stage.
+                Unfortunately this never got beyond concept stage.
               </p>
             </section>
             <section className="example grid">

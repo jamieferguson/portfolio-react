@@ -30,7 +30,7 @@ function WorkViator() {
               <div className="Header--inner">
                 <h1>Viator</h1>
                 <h2>
-                  Interaction Design <span>/ 2013</span>
+                  UX & UI Design <span>/ 2013</span>
                 </h2>
               </div>
               <div className="background-wrapper">
@@ -47,7 +47,7 @@ function WorkViator() {
                 closely with the developers, engaging them as part of the design process.
               </p>
               <p>As a firm believer that UX doesn't end when wireframes are signed off I also contributed to visual design and development wherever possible.</p>
-              <p>During my short time there I worked on a major redesign of their iOS and Android apps as well as their main mobile website. At last count the iOS app has been downloaded over 1 million times.</p>
+              <p>During my short time there I worked on a major redesign of their iOS and Android apps as well as their main mobile website. </p>
             </section>
             <section id="skills">
               <h5>Primary skills used</h5>

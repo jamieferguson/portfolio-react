@@ -372,7 +372,7 @@ header {
 
 .example {
   text-align: center;
-  padding: 2% 5%;
+  padding: 2% 5% 3%;
   max-width: 1600px;
   margin: 0 auto;
 
@@ -381,9 +381,15 @@ header {
     height: auto;
   }
 
+  .item {
+    + .item {
+      margin-top: 3rem;
+    }
+  }
+
   .bordered {
     border: $borderWidth solid #f1f1f1;
-    margin: 0 auto 3rem;
+    margin: 0 auto;
     position: relative;
 
     img {
@@ -402,92 +408,97 @@ header {
   }
 
   p {
-    width: 60%;
-    min-width: 300px;
     margin: 1rem auto 3rem;
     font-family: $font-secondary;
     font-size: 0.8em;
+    @media (orientation: landscape) {
+      width: 60%;
+    }
   }
 
   .btn {
     margin-top: -1.5rem;
   }
+}
+.grid {
+  ul {
+    padding: 0;
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: flex-start;
+    -webkit-align-content: flex-start;
+    background: #f1f1f1;
+    border: 3px solid #f1f1f1;
 
-  &.grid {
-    ul {
-      padding: 0;
-      margin-bottom: 20px;
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      align-content: flex-start;
-      display: -webkit-flex;
-      -webkit-flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      -webkit-justify-content: center;
-      -webkit-align-items: flex-start;
-      -webkit-align-content: flex-start;
-      border: 3px solid #f1f1f1;
-
-      &.quarter {
-        li {
-          width: 50%;
-          @media (orientation: landscape) {
-            width: 25%;
-          }
+    &.quarter {
+      li {
+        width: 50%;
+        @media (orientation: landscape) {
+          width: 25%;
         }
       }
+    }
 
-      li {
-        background-color: $text-color;
-        display: inline-block;
+    li {
+      background-color: $text-color;
+      display: inline-block;
+      position: relative;
+      border: 3px solid #f1f1f1;
+
+      @media (orientation: landscape) {
+        width: 50%;
+      }
+
+      &.example-full {
+        width: 100%;
+      }
+
+      a {
         position: relative;
-        border: 3px solid #f1f1f1;
+        display: block;
+        overflow: hidden;
 
-        @media (orientation: landscape) {
-          width: 50%;
+        img {
+          width: 100%;
+          margin: 0;
+          display: block;
         }
 
-        a {
-          position: relative;
-          display: block;
-          overflow: hidden;
+        .overlay {
+          position: absolute;
+          z-index: 2;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(black, 0.8);
+          opacity: 0;
+          transition: opacity 100ms ease-in-out;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
 
-          img {
-            width: 100%;
-            margin: 0;
+          span {
             display: block;
           }
 
-          .overlay {
-            position: absolute;
-            z-index: 2;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(black, 0.8);
-            opacity: 0;
+          .btn {
+            margin-top: 15px;
+          }
+
+          &:hover {
+            opacity: 1;
             transition: opacity 100ms ease-in-out;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            span {
-              display: block;
-            }
-
-            .btn {
-              margin-top: 15px;
-            }
-
-            &:hover {
-              opacity: 1;
-              transition: opacity 100ms ease-in-out;
-            }
           }
         }
       }

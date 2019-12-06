@@ -13,7 +13,7 @@ function WorkList() {
         >
           <div className="text">
             <h3>Shorthand</h3>
-            <h4>UX & UI Design</h4>
+            <h4>Product Design</h4>
             <div className="date">2014-19</div>
           </div>
           <div className="background-overlay" />
@@ -58,7 +58,7 @@ function WorkList() {
         >
           <div className="text">
             <h3>The Australian</h3>
-            <h4>Editorial & UX Design</h4>
+            <h4>Data Vis & Editorial Design</h4>
             <div className="date">2011</div>
           </div>
           <div className="background-overlay" />
