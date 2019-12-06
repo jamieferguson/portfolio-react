@@ -30,7 +30,7 @@ function WorkTGM() {
               <div className="Header--inner">
                 <h1>The Global Mail</h1>
                 <h2>
-                  Data Vis & Editorial Design <span>/ 2012</span>
+                  Data Vis & Editorial Design <span>/ 2012-2013</span>
                 </h2>
               </div>
               <div className="background-wrapper">

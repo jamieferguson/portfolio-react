@@ -30,7 +30,7 @@ function WorkAus() {
               <div className="Header--inner">
                 <h1>The Australian</h1>
                 <h2>
-                  Data Vis & Editorial Design <span>/ 2011</span>
+                  Data Vis & Editorial Design <span>/ 2011-2012</span>
                 </h2>
               </div>
               <div className="background-wrapper">

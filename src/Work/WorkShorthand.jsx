@@ -31,7 +31,7 @@ const WorkShorthand = () => (
             <div className="Header--inner">
               <h1>Shorthand</h1>
               <h2>
-                Product Design <span>/ 2014-19</span>
+                Product Design <span>/ 2014-2019</span>
               </h2>
             </div>
             <div className="background-wrapper">
@@ -51,7 +51,8 @@ const WorkShorthand = () => (
             </p>
             <p>
               I then transitioned to work as part of the product team as 'Product Designer' on developing new features and improvements. In this role I worked closely with all parts of the business - development, support, sales and
-              management. And as it was a start-up I was also involved in a broad range of activities - from support through to product planning.
+              management.</p> 
+              <p>And as it is a small team I was involved in a broad range of activities - from client support through to product planning.
             </p>
           </section>
           <section id="skills">
@@ -134,8 +135,10 @@ const WorkShorthand = () => (
             </ul>
 
             <p>
-              Some examples of the many mocks & rough concepts that I did at Shorthand. The ideation process varied depending on the feature. Some started as prototypes directly in the browser, some were more standard prototypes using
-              Photoshop, Figma or Invision, and others started as rouch concept 'sketches' or storyboards.
+              Some examples of the many mocks & rough concepts that I did at Shorthand. The ideation process varied depending on the feature. Some started as prototypes directly in the browser, some were more the standard prototypes using
+              Photoshop, Figma or Invision, and others started as rough concept 'sketches' or storyboards.</p>
+              <p>As I worked alongside the developers directly in the codebase, we tried to get from initial concept to a working prototype (that 
+              'felt' real) as rapidly as possible.
             </p>
           </section>
 
@@ -157,6 +160,7 @@ const WorkShorthand = () => (
             </ul>
 
             <p>'Shorthand Social' was a fairly short lived app that was similar to the main Shorthand app but focussed on letting more casual storytellers easily create and share their stories.</p>
+            <p>The main concept behind it was that the story could be automatically shared (initially via a series tweets) over a set period of time.</p>
           </section>
         </div>
         <Footer />

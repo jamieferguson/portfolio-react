@@ -14,7 +14,7 @@ function WorkList() {
           <div className="text">
             <h3>Shorthand</h3>
             <h4>Product Design</h4>
-            <div className="date">2014-19</div>
+            <div className="date">2014-2019</div>
           </div>
           <div className="background-overlay" />
         </Link>
@@ -44,7 +44,7 @@ function WorkList() {
           <div className="text">
             <h3>The Global Mail</h3>
             <h4>Data Vis & Editorial Design</h4>
-            <div className="date">2012</div>
+            <div className="date">2012-2013</div>
           </div>
           <div className="background-overlay" />
         </Link>
@@ -59,7 +59,7 @@ function WorkList() {
           <div className="text">
             <h3>The Australian</h3>
             <h4>Data Vis & Editorial Design</h4>
-            <div className="date">2011</div>
+            <div className="date">2011-2012</div>
           </div>
           <div className="background-overlay" />
         </Link>
