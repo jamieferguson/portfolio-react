@@ -67,18 +67,18 @@ const WorkShorthand = () => (
           <section className="example grid">
             <h5>Shorthand - Main App screens</h5>
             <ul>
-              <li>
+              <li className="example-full">
                 <img src={require("../Media/work-sh-dash-01.jpg")} alt="The Shorthand dashboard" />
               </li>
-              <li>
+              {/* <li>
                 <img src={require("../Media/work-sh-dash-02.jpg")} alt="Team Settings panel" />
-              </li>
-              <li>
+              </li> */}
+              <li className="example-full">
                 <img src={require("../Media/work-sh-editor-01.jpg")} alt="The Shorthand editor" />
               </li>
-              <li>
+              {/* <li>
                 <img src={require("../Media/work-sh-editor-02.jpg")} alt="Responsive preview feature in the Shorthand editor" />
-              </li>
+              </li> */}
             </ul>
 
             <p>The Shorthand app has two main 'views' - the dashboard, where all stories and collections live, and the editor where the user can create their stories.</p>
@@ -142,7 +142,7 @@ const WorkShorthand = () => (
             </p>
           </section>
 
-          <section className="example grid">
+          {/* <section className="example grid">
             <h5>Shorthand Social - Various screens</h5>
             <ul>
               <li>
@@ -161,7 +161,7 @@ const WorkShorthand = () => (
 
             <p>'Shorthand Social' was a fairly short lived app that was similar to the main Shorthand app but focussed on letting more casual storytellers easily create and share their stories.</p>
             <p>The main concept behind it was that the story could be automatically shared (initially via a series tweets) over a set period of time.</p>
-          </section>
+          </section> */}
         </div>
         <Footer />
       </main>
