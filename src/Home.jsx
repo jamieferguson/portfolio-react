@@ -22,7 +22,8 @@ const Home = () => (
           <div className="Header--inner">
             <h1>Jamie Ferguson</h1>
             <h2>
-              UI & Interaction Designer <span className="location">/ Sydney, Australia</span>
+              Product Designer{" "}
+              <span className="location">/ Sydney, Australia</span>
             </h2>
           </div>
         </header>

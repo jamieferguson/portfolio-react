@@ -8,13 +8,13 @@ function WorkList() {
         <Link
           to={{
             pathname: "/shorthand",
-            state: { prev: true }
+            state: { prev: true },
           }}
         >
           <div className="text">
             <h3>Shorthand</h3>
             <h4>Product Design</h4>
-            <div className="date">2014-2019</div>
+            <div className="date">2014-</div>
           </div>
           <div className="background-overlay" />
         </Link>
@@ -23,7 +23,7 @@ function WorkList() {
         <Link
           to={{
             pathname: "/viator",
-            state: { prev: true }
+            state: { prev: true },
           }}
         >
           <div className="text">
@@ -38,7 +38,7 @@ function WorkList() {
         <Link
           to={{
             pathname: "/the-global-mail",
-            state: { prev: true }
+            state: { prev: true },
           }}
         >
           <div className="text">
@@ -53,7 +53,7 @@ function WorkList() {
         <Link
           to={{
             pathname: "/the-australian",
-            state: { prev: true }
+            state: { prev: true },
           }}
         >
           <div className="text">
