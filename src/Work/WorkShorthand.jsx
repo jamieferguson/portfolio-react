@@ -89,21 +89,21 @@ const WorkShorthand = () => (
             <ul>
               <li className="example-full">
                 <img
-                  src={require("../Media/work-sh-dash-01.jpg")}
+                  src={require("../Media/work-sh-dash-01.jpg").default}
                   alt="The Shorthand dashboard"
                 />
               </li>
               {/* <li>
-                <img src={require("../Media/work-sh-dash-02.jpg")} alt="Team Settings panel" />
+                <img src={require("../Media/work-sh-dash-02.jpg").default} alt="Team Settings panel" />
               </li> */}
               <li className="example-full">
                 <img
-                  src={require("../Media/work-sh-editor-01.jpg")}
+                  src={require("../Media/work-sh-editor-01.jpg").default}
                   alt="The Shorthand editor"
                 />
               </li>
               {/* <li>
-                <img src={require("../Media/work-sh-editor-02.jpg")} alt="Responsive preview feature in the Shorthand editor" />
+                <img src={require("../Media/work-sh-editor-02.jpg").default} alt="Responsive preview feature in the Shorthand editor" />
               </li> */}
             </ul>
           </section>
@@ -121,37 +121,37 @@ const WorkShorthand = () => (
             <ul>
               <li>
                 <img
-                  src={require("../Media/work-sh-ui-03.jpg")}
+                  src={require("../Media/work-sh-ui-03.jpg").default}
                   alt="Text block options in the Shorthand editor"
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-sh-ui-04.jpg")}
+                  src={require("../Media/work-sh-ui-04.jpg").default}
                   alt="Text styling options in the Shorthand editor"
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-sh-ui-05.jpg")}
+                  src={require("../Media/work-sh-ui-05.jpg").default}
                   alt="A close-up of some section settings UI"
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-sh-ui-06.jpg")}
+                  src={require("../Media/work-sh-ui-06.jpg").default}
                   alt="Manage Story Collaborators panel in the Shorthand editor"
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-sh-ui-01.jpg")}
+                  src={require("../Media/work-sh-ui-01.jpg").default}
                   alt="Manage Story Collaborators panel on the Shorthand dashboard"
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-sh-ui-02.jpg")}
+                  src={require("../Media/work-sh-ui-02.jpg").default}
                   alt="Leader View option enabled on the Shorthand dashboard"
                 />
               </li>
@@ -175,32 +175,32 @@ const WorkShorthand = () => (
             <ul>
               <li>
                 <img
-                  src={require("../Media/work-sh-mock-01.jpg")}
+                  src={require("../Media/work-sh-mock-01.jpg").default}
                   alt="Shorthand Social - tweet scheduler UI"
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-sh-mock-02.jpg")}
+                  src={require("../Media/work-sh-mock-02.jpg").default}
                   alt="Shorthand Social - dashboard mockup"
                 />
               </li>
               <li className="example-full">
                 <img
-                  src={require("../Media/work-sh-concept-02.jpg")}
+                  src={require("../Media/work-sh-concept-02.jpg").default}
                   alt="Shorthand Social - An initial mockup of the tweet previewer"
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-sh-concept-01.jpg")}
+                  src={require("../Media/work-sh-concept-01.jpg").default}
                   alt="Shorthand Social - Published story UI"
                 />
               </li>
 
               <li>
                 <img
-                  src={require("../Media/work-sh-concept-03.jpg")}
+                  src={require("../Media/work-sh-concept-03.jpg").default}
                   alt="Shorthand Social - An initial mockup of the tweet previewer"
                 />
               </li>
@@ -211,16 +211,16 @@ const WorkShorthand = () => (
             <h5>Shorthand Social - Various screens</h5>
             <ul>
               <li>
-                <img src={require("../Media/work-sh-social-01.jpg")} alt="Shorthand Social - tweet scheduler UI" />
+                <img src={require("../Media/work-sh-social-01.jpg").default} alt="Shorthand Social - tweet scheduler UI" />
               </li>
               <li>
-                <img src={require("../Media/work-sh-social-03.jpg")} alt="Shorthand Social - dashboard mockup" />
+                <img src={require("../Media/work-sh-social-03.jpg").default} alt="Shorthand Social - dashboard mockup" />
               </li>
               <li>
-                <img src={require("../Media/work-sh-social-02.jpg")} alt="Shorthand Social - Published story UI" />
+                <img src={require("../Media/work-sh-social-02.jpg").default} alt="Shorthand Social - Published story UI" />
               </li>
               <li>
-                <img src={require("../Media/work-sh-social-04.jpg")} alt="Shorthand Social - An initial mockup of the tweet previewer" />
+                <img src={require("../Media/work-sh-social-04.jpg").default} alt="Shorthand Social - An initial mockup of the tweet previewer" />
               </li>
             </ul>
 
