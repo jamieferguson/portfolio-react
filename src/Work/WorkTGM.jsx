@@ -138,8 +138,9 @@ function WorkTGM() {
                       <span>The Great Pill Pu$h</span>
                       <div
                         className="btn"
-                        href="http://pharma.theglobalmail.org/"
+                        href="https://tgm-archive.github.io/pharma/"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         View Live
                       </div>
@@ -157,8 +158,9 @@ function WorkTGM() {
                       <span>The Town That Wouldn’t Disappear</span>
                       <div
                         className="btn"
-                        href="http://bulga.theglobalmail.org/"
+                        href="https://tgm-archive.github.io/bulga/"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         View Live
                       </div>
@@ -166,28 +168,6 @@ function WorkTGM() {
                     <img src={require("../Media/work-tgm-bulga.jpg")} alt="" />
                   </a>
                 </li>
-                {/* <li>
-									<a href="http://rockart.theglobalmail.org/" target="_blank" rel="noopener noreferrer">
-										<div className="overlay">
-											<span>Rock Art At Risk</span>
-											<div className="btn" href="http://rockart.theglobalmail.org/" target="_blank">
-												View Live
-											</div>
-										</div>
-										<img src={require('../Media/work-tgm-rockart.jpg')} alt="" />
-									</a>
-								</li>
-								<li>
-									<a href="http://dementia.theglobalmail.org/" target="_blank" rel="noopener noreferrer">
-										<div className="overlay">
-											<span>Hearts And Minds: A Personal Look At Dementia</span>
-											<div className="btn" href="http://dementia.theglobalmail.org/" target="_blank">
-												View Live
-											</div>
-										</div>
-										<img src={require('../Media/work-tgm-alz.jpg')} alt="" />
-									</a>
-								</li> */}
               </ul>
             </section>
             <section className="example grid">

@@ -50,7 +50,11 @@ const WorkShorthand = () => (
 
           <section id="intro">
             <p>
-              <a href="http://shorthand.com/" target="_blank">
+              <a
+                href="http://shorthand.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Shorthand
               </a>{" "}
               is a Brisbane based start-up who develops webapps allowing
