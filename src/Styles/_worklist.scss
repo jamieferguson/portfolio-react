@@ -3,6 +3,7 @@
     text-align: center;
   }
   ul {
+    border-radius: 20px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -157,11 +158,10 @@
       }
     }
   }
-}
 
-.work-footer {
-  ul {
-    border-radius: $pageRadius;
-    overflow: hidden;
+  &.work-footer {
+    ul {
+      overflow: hidden;
+    }
   }
 }
