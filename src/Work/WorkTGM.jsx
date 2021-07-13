@@ -82,52 +82,40 @@ function WorkTGM() {
               </p>
               <ul>
                 <li>
-                  <img
-                    src={require("../Media/work-tgm-wire-01.jpg").default}
-                    alt=""
-                  />
+                  <img src={require("../Media/work-tgm-wire-01.jpg")} alt="" />
                 </li>
                 <li>
-                  <img
-                    src={require("../Media/work-tgm-wire-03.jpg").default}
-                    alt=""
-                  />
+                  <img src={require("../Media/work-tgm-wire-03.jpg")} alt="" />
                 </li>
                 <li>
-                  <img
-                    src={require("../Media/work-tgm-wire-02.jpg").default}
-                    alt=""
-                  />
+                  <img src={require("../Media/work-tgm-wire-02.jpg")} alt="" />
                 </li>
                 <li>
-                  <img
-                    src={require("../Media/work-tgm-wire-04.jpg").default}
-                    alt=""
-                  />
+                  <img src={require("../Media/work-tgm-wire-04.jpg")} alt="" />
                 </li>
               </ul>
               <ul className="quarter">
                 <li>
                   <img
-                    src={require("../Media/work-tgm-wire-mob-01.jpg").default}
+                    src={require("../Media/work-tgm-wire-mob-01.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-wire-mob-03.jpg").default}
+                    src={require("../Media/work-tgm-wire-mob-03.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-wire-mob-02.jpg").default}
+                    src={require("../Media/work-tgm-wire-mob-02.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-wire-mob-04.jpg").default}
+                    src={require("../Media/work-tgm-wire-mob-04.jpg")}
                     alt=""
                   />
                 </li>
@@ -157,10 +145,7 @@ function WorkTGM() {
                         View Live
                       </div>
                     </div>
-                    <img
-                      src={require("../Media/work-tgm-pharma.jpg").default}
-                      alt=""
-                    />
+                    <img src={require("../Media/work-tgm-pharma.jpg")} alt="" />
                   </a>
                 </li>
                 <li>
@@ -180,10 +165,7 @@ function WorkTGM() {
                         View Live
                       </div>
                     </div>
-                    <img
-                      src={require("../Media/work-tgm-bulga.jpg").default}
-                      alt=""
-                    />
+                    <img src={require("../Media/work-tgm-bulga.jpg")} alt="" />
                   </a>
                 </li>
               </ul>
@@ -199,13 +181,13 @@ function WorkTGM() {
               <ul>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-partylines-01.jpg").default}
+                    src={require("../Media/work-tgm-partylines-01.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-partylines-02.jpg").default}
+                    src={require("../Media/work-tgm-partylines-02.jpg")}
                     alt=""
                   />
                 </li>
@@ -223,25 +205,25 @@ function WorkTGM() {
               <ul>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-politalk-01.jpg").default}
+                    src={require("../Media/work-tgm-politalk-01.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-politalk-02.jpg").default}
+                    src={require("../Media/work-tgm-politalk-02.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-politalk-03.jpg").default}
+                    src={require("../Media/work-tgm-politalk-03.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-politalk-04.jpg").default}
+                    src={require("../Media/work-tgm-politalk-04.jpg")}
                     alt=""
                   />
                 </li>
@@ -257,13 +239,13 @@ function WorkTGM() {
               <ul>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-rockart-01.jpg").default}
+                    src={require("../Media/work-tgm-rockart-01.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-tgm-rockart-02.jpg").default}
+                    src={require("../Media/work-tgm-rockart-02.jpg")}
                     alt=""
                   />
                 </li>

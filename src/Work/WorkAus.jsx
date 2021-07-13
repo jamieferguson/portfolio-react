@@ -68,42 +68,40 @@ function WorkAus() {
               <ul>
                 <li>
                   <img
-                    src={require("../Media/work-aus-yourschool-01.jpg").default}
+                    src={require("../Media/work-aus-yourschool-01.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-aus-yourschool-02.jpg").default}
+                    src={require("../Media/work-aus-yourschool-02.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={
-                      require("../Media/work-aus-yourschool-02a.jpg").default
-                    }
+                    src={require("../Media/work-aus-yourschool-02a.jpg")}
                     alt=""
                   />
                 </li>
                 {/* <li>
-                  <img src={require("../Media/work-aus-yourschool-03.jpg").default} alt="" />
+                  <img src={require("../Media/work-aus-yourschool-03.jpg")} alt="" />
                 </li> */}
                 <li>
                   <img
-                    src={require("../Media/work-aus-yourschool-04.jpg").default}
+                    src={require("../Media/work-aus-yourschool-04.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-aus-yourschool-05.jpg").default}
+                    src={require("../Media/work-aus-yourschool-05.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-aus-yourschool-06.jpg").default}
+                    src={require("../Media/work-aus-yourschool-06.jpg")}
                     alt=""
                   />
                 </li>
@@ -119,13 +117,13 @@ function WorkAus() {
               <ul>
                 <li>
                   <img
-                    src={require("../Media/work-aus-election-01.jpg").default}
+                    src={require("../Media/work-aus-election-01.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={require("../Media/work-aus-election-02.jpg").default}
+                    src={require("../Media/work-aus-election-02.jpg")}
                     alt=""
                   />
                 </li>
@@ -142,49 +140,37 @@ function WorkAus() {
               <ul>
                 <li>
                   <img
-                    src={
-                      require("../Media/work-aus-electionapp-01.jpg").default
-                    }
+                    src={require("../Media/work-aus-electionapp-01.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={
-                      require("../Media/work-aus-electionapp-02.jpg").default
-                    }
+                    src={require("../Media/work-aus-electionapp-02.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={
-                      require("../Media/work-aus-electionapp-03.jpg").default
-                    }
+                    src={require("../Media/work-aus-electionapp-03.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={
-                      require("../Media/work-aus-electionapp-04.jpg").default
-                    }
+                    src={require("../Media/work-aus-electionapp-04.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={
-                      require("../Media/work-aus-electionapp-05.jpg").default
-                    }
+                    src={require("../Media/work-aus-electionapp-05.jpg")}
                     alt=""
                   />
                 </li>
                 <li>
                   <img
-                    src={
-                      require("../Media/work-aus-electionapp-06.jpg").default
-                    }
+                    src={require("../Media/work-aus-electionapp-06.jpg")}
                     alt=""
                   />
                 </li>

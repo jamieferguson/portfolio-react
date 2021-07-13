@@ -80,7 +80,7 @@ function WorkViator() {
               </p>
               <div className="item bordered">
                 <img
-                  src={require("../Media/work-viator-sitemap.png").default}
+                  src={require("../Media/work-viator-sitemap.png")}
                   alt="Viator iPhone App - IA"
                 />
               </div>
@@ -90,14 +90,14 @@ function WorkViator() {
               </p>
               <div className="item bordered">
                 <img
-                  src={require("../Media/work-viator-wireframes.png").default}
+                  src={require("../Media/work-viator-wireframes.png")}
                   alt="Viator iPhone App - Wireframes"
                 />
               </div>
               <p>Some examples of visual design mockups that I did.</p>
               <div className="item bordered">
                 <img
-                  src={require("../Media/work-viator-designs.jpg").default}
+                  src={require("../Media/work-viator-designs.jpg")}
                   alt="Viator iPhone App - Mockups"
                 />
               </div>
@@ -112,7 +112,7 @@ function WorkViator() {
               </p>
               <div className="item bordered">
                 <img
-                  src={require("../Media/work-viator-android.png").default}
+                  src={require("../Media/work-viator-android.png")}
                   alt="Viator Android App - Wireframes"
                 />
               </div>
@@ -125,7 +125,7 @@ function WorkViator() {
               </p>
               <div className="item bordered">
                 <img
-                  src={require("../Media/work-viator-mobile.png").default}
+                  src={require("../Media/work-viator-mobile.png")}
                   alt="Viator Mobile Site"
                 />
               </div>
