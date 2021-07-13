@@ -1,6 +1,5 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import BodyClassName from "react-body-classname";
 
 import Nav from "./Components/Nav";
 import WorkList from "./Components/WorkList";
@@ -13,7 +12,7 @@ const ScrollToTop = () => {
 };
 
 const Home = () => (
-  <BodyClassName className="home">
+  <div className="home">
     <Page>
       <Route component={ScrollToTop} />
       <Nav />
@@ -31,7 +30,7 @@ const Home = () => (
       </section>
       <Footer />
     </Page>
-  </BodyClassName>
+  </div>
 );
 
 export default Home;

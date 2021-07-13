@@ -4,7 +4,6 @@ import Page from "../Components/Page";
 import Footer from "../Components/Footer";
 import WorkNav from "../Components/WorkNav";
 import WorkFooter from "../Components/WorkFooter";
-import BodyClassName from "react-body-classname";
 
 const ScrollToTop = () => {
   window.scrollTo(0, 0);
@@ -13,7 +12,7 @@ const ScrollToTop = () => {
 
 function WorkAus() {
   return (
-    <BodyClassName className="aus">
+    <div className="aus">
       <Page>
         <Route component={ScrollToTop} />
         <WorkNav />
@@ -172,7 +171,7 @@ function WorkAus() {
         <WorkFooter />
         <Footer />
       </Page>
-    </BodyClassName>
+    </div>
   );
 }
 

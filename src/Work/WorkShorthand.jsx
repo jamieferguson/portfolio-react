@@ -1,6 +1,5 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import BodyClassName from "react-body-classname";
 import WorkNav from "../Components/WorkNav";
 import WorkFooter from "../Components/WorkFooter";
 import Page from "../Components/Page";
@@ -12,7 +11,7 @@ const ScrollToTop = () => {
 };
 
 const WorkShorthand = () => (
-  <BodyClassName className="shorthand">
+  <div className="shorthand">
     <Page>
       <Route component={ScrollToTop} />
       <WorkNav />
@@ -191,7 +190,7 @@ const WorkShorthand = () => (
       <WorkFooter />
       <Footer />
     </Page>
-  </BodyClassName>
+  </div>
 );
 
 export default WorkShorthand;

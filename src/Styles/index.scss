@@ -18,6 +18,7 @@ body {
   padding: $page-padding;
   margin: 0;
   font-size: 16px;
+  overscroll-behavior: none;
   @media screen and (min-width: $breakpoint-sm) {
     padding: $page-padding-lg;
   }
