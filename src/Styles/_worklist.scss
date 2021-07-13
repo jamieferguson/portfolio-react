@@ -1,4 +1,7 @@
 #work {
+  h5 {
+    text-align: center;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -100,22 +103,6 @@
         bottom: 0;
         transition: background 100ms ease-in-out;
       }
-
-      .shorthand & {
-        background-image: url("../Media/index-shorthand.jpg");
-      }
-
-      .viator & {
-        background-image: url("../Media/index-viator.jpg");
-      }
-
-      .tgm & {
-        background-image: url("../Media/index-tgm.jpg");
-      }
-
-      .aus & {
-        background-image: url("../Media/index-aus.jpg");
-      }
     }
 
     .shorthand {
@@ -125,6 +112,9 @@
 
       .background-overlay {
         background-color: $shorthand;
+      }
+      body.shorthand & {
+        display: none;
       }
     }
 
@@ -136,6 +126,9 @@
       .background-overlay {
         background-color: $viator;
       }
+      body.viator & {
+        display: none;
+      }
     }
 
     .tgm {
@@ -145,6 +138,9 @@
 
       .background-overlay {
         background-color: $tgm;
+      }
+      body.tgm & {
+        display: none;
       }
     }
 
@@ -156,6 +152,16 @@
       .background-overlay {
         background-color: $aus;
       }
+      body.aus & {
+        display: none;
+      }
     }
+  }
+}
+
+.work-footer {
+  ul {
+    border-radius: $pageRadius;
+    overflow: hidden;
   }
 }

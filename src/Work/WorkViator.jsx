@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 import Page from "../Components/Page";
+import Footer from "../Components/Footer";
+import WorkFooter from "../Components/WorkFooter";
 import BodyClassName from "react-body-classname";
 
 const ScrollToTop = () => {
@@ -33,7 +35,6 @@ function WorkViator() {
                   UX & UI Design <span>/ 2013</span>
                 </h2>
                 <div id="skills">
-                  {/* <h5>Primary skills used</h5> */}
                   <ul>
                     <li>Wireframing</li>
                     <li>Prototyping</li>
@@ -132,6 +133,8 @@ function WorkViator() {
             </section>
           </div>
         </div>
+        <WorkFooter />
+        <Footer />
       </Page>
     </BodyClassName>
   );

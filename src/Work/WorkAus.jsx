@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 import Page from "../Components/Page";
+import Footer from "../Components/Footer";
+import WorkFooter from "../Components/WorkFooter";
 import BodyClassName from "react-body-classname";
 
 const ScrollToTop = () => {
@@ -33,7 +35,6 @@ function WorkAus() {
                   Data Vis & Editorial Design <span>/ 2011-2012</span>
                 </h2>
                 <div id="skills">
-                  {/* <h5>Primary skills used</h5> */}
                   <ul>
                     <li>Ideation</li>
                     <li>Editorial Design</li>
@@ -84,9 +85,6 @@ function WorkAus() {
                     alt=""
                   />
                 </li>
-                {/* <li>
-                  <img src={require("../Media/work-aus-yourschool-03.jpg")} alt="" />
-                </li> */}
                 <li>
                   <img
                     src={require("../Media/work-aus-yourschool-04.jpg")}
@@ -183,6 +181,8 @@ function WorkAus() {
             </section>
           </div>
         </div>
+        <WorkFooter />
+        <Footer />
       </Page>
     </BodyClassName>
   );

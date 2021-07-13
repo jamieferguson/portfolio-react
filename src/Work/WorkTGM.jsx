@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 import Page from "../Components/Page";
+import Footer from "../Components/Footer";
+import WorkFooter from "../Components/WorkFooter";
 import BodyClassName from "react-body-classname";
 
 const ScrollToTop = () => {
@@ -33,7 +35,6 @@ function WorkTGM() {
                   Data Vis & Editorial Design <span>/ 2012-2013</span>
                 </h2>
                 <div id="skills">
-                  {/* <h5>Primary skills used</h5> */}
                   <ul>
                     <li>Ideation</li>
                     <li>UI Design</li>
@@ -253,6 +254,8 @@ function WorkTGM() {
             </section>
           </div>
         </div>
+        <WorkFooter />
+        <Footer />
       </Page>
     </BodyClassName>
   );

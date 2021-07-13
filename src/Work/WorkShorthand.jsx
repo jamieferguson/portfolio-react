@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 import BodyClassName from "react-body-classname";
-
+import WorkFooter from "../Components/WorkFooter";
 import Page from "../Components/Page";
 import Footer from "../Components/Footer";
 
@@ -34,12 +34,10 @@ const WorkShorthand = () => (
                 Product Design <span>/ 2014-</span>
               </h2>
               <div id="skills">
-                {/* <h5>Primary skills used</h5> */}
                 <ul>
                   <li>Ideation</li>
                   <li>Prototyping</li>
                   <li>UI Design</li>
-                  <li>UI Development (SCSS)</li>
                 </ul>
               </div>
             </div>
@@ -93,18 +91,12 @@ const WorkShorthand = () => (
                   alt="The Shorthand dashboard"
                 />
               </li>
-              {/* <li>
-                <img src={require("../Media/work-sh-dash-02.jpg")} alt="Team Settings panel" />
-              </li> */}
               <li className="example-full">
                 <img
                   src={require("../Media/work-sh-editor-01.jpg")}
                   alt="The Shorthand editor"
                 />
               </li>
-              {/* <li>
-                <img src={require("../Media/work-sh-editor-02.jpg")} alt="Responsive preview feature in the Shorthand editor" />
-              </li> */}
             </ul>
           </section>
 
@@ -206,30 +198,10 @@ const WorkShorthand = () => (
               </li>
             </ul>
           </section>
-
-          {/* <section className="example grid">
-            <h5>Shorthand Social - Various screens</h5>
-            <ul>
-              <li>
-                <img src={require("../Media/work-sh-social-01.jpg")} alt="Shorthand Social - tweet scheduler UI" />
-              </li>
-              <li>
-                <img src={require("../Media/work-sh-social-03.jpg")} alt="Shorthand Social - dashboard mockup" />
-              </li>
-              <li>
-                <img src={require("../Media/work-sh-social-02.jpg")} alt="Shorthand Social - Published story UI" />
-              </li>
-              <li>
-                <img src={require("../Media/work-sh-social-04.jpg")} alt="Shorthand Social - An initial mockup of the tweet previewer" />
-              </li>
-            </ul>
-
-            <p>'Shorthand Social' was a fairly short lived app that was similar to the main Shorthand app but focussed on letting more casual storytellers easily create and share their stories.</p>
-            <p>The main concept behind it was that the story could be automatically shared (initially via a series tweets) over a set period of time.</p>
-          </section> */}
         </div>
-        <Footer />
       </main>
+      <WorkFooter />
+      <Footer />
     </Page>
   </BodyClassName>
 );

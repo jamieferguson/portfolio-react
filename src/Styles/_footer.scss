@@ -6,4 +6,7 @@ footer {
     padding-left: $padding-x-lg;
     padding-right: $padding-x-lg;
   }
+  .work-footer + & {
+    padding-top: 2em;
+  }
 }
