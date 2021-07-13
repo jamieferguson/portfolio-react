@@ -24,14 +24,12 @@
       min-height: 100vh;
       position: fixed;
       padding: 0 $padding-x-lg;
-      // box-shadow: 0 0 $page-padding-lg rgba(black, 0.5);
       z-index: 2;
     }
 
     @media screen and (orientation: portrait) {
-      // margin-top: $navHeight;
-      height: calc(40vh + #{$navHeight});
-      min-height: calc(40vh + #{$navHeight});
+      height: calc(50vh + #{$navHeight});
+      min-height: calc(50vh + #{$navHeight});
 
       h1 {
         margin-top: $navHeight / 2;
