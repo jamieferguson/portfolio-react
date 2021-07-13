@@ -10,6 +10,20 @@ const ScrollToTop = () => {
   return null;
 };
 
+const ImgWithFallback = ({
+  src,
+  fallback,
+  type = "image/webp",
+  ...delegated
+}) => {
+  return (
+    <picture>
+      <source srcSet={src} type={type} />
+      <img src={fallback} {...delegated} />
+    </picture>
+  );
+};
+
 function WorkTGM() {
   return (
     <div className="tgm">
@@ -72,40 +86,60 @@ function WorkTGM() {
             </p>
             <ul>
               <li>
-                <img src={require("../Media/work-tgm-wire-01.jpg")} alt="" />
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-wire-01.webp")}
+                  fallback={require("../Media/work-tgm-wire-01.jpg")}
+                  alt=""
+                />
               </li>
               <li>
-                <img src={require("../Media/work-tgm-wire-03.jpg")} alt="" />
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-wire-03.webp")}
+                  fallback={require("../Media/work-tgm-wire-03.jpg")}
+                  alt=""
+                />
               </li>
               <li>
-                <img src={require("../Media/work-tgm-wire-02.jpg")} alt="" />
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-wire-02.webp")}
+                  fallback={require("../Media/work-tgm-wire-02.jpg")}
+                  alt=""
+                />
               </li>
               <li>
-                <img src={require("../Media/work-tgm-wire-04.jpg")} alt="" />
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-wire-04.webp")}
+                  fallback={require("../Media/work-tgm-wire-04.jpg")}
+                  alt=""
+                />
               </li>
             </ul>
             <ul className="quarter">
               <li>
                 <img
-                  src={require("../Media/work-tgm-wire-mob-01.jpg")}
+                  src={require("../Media/work-tgm-wire-mob-01.webp")}
+                  fallback={require("../Media/work-tgm-wire-mob-01.jpg")}
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-tgm-wire-mob-03.jpg")}
+                  src={require("../Media/work-tgm-wire-mob-03.webp")}
+                  fallback={require("../Media/work-tgm-wire-mob-03.jpg")}
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-tgm-wire-mob-02.jpg")}
+                  src={require("../Media/work-tgm-wire-mob-02.webp")}
+                  fallback={require("../Media/work-tgm-wire-mob-02.jpg")}
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src={require("../Media/work-tgm-wire-mob-04.jpg")}
+                  src={require("../Media/work-tgm-wire-mob-04.webp")}
+                  fallback={require("../Media/work-tgm-wire-mob-04.jpg")}
                   alt=""
                 />
               </li>
@@ -135,7 +169,11 @@ function WorkTGM() {
                       View Live
                     </div>
                   </div>
-                  <img src={require("../Media/work-tgm-pharma.jpg")} alt="" />
+                  <ImgWithFallback
+                    src={require("../Media/work-tgm-pharma.webp")}
+                    fallback={require("../Media/work-tgm-pharma.jpg")}
+                    alt=""
+                  />
                 </a>
               </li>
               <li>
@@ -155,7 +193,11 @@ function WorkTGM() {
                       View Live
                     </div>
                   </div>
-                  <img src={require("../Media/work-tgm-bulga.jpg")} alt="" />
+                  <ImgWithFallback
+                    src={require("../Media/work-tgm-bulga.webp")}
+                    fallback={require("../Media/work-tgm-bulga.jpg")}
+                    alt=""
+                  />
                 </a>
               </li>
             </ul>
@@ -169,14 +211,16 @@ function WorkTGM() {
             </p>
             <ul>
               <li>
-                <img
-                  src={require("../Media/work-tgm-partylines-01.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-partylines-01.webp")}
+                  fallback={require("../Media/work-tgm-partylines-01.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-tgm-partylines-02.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-partylines-02.webp")}
+                  fallback={require("../Media/work-tgm-partylines-02.jpg")}
                   alt=""
                 />
               </li>
@@ -192,26 +236,30 @@ function WorkTGM() {
             </p>
             <ul>
               <li>
-                <img
-                  src={require("../Media/work-tgm-politalk-01.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-politalk-01.webp")}
+                  fallback={require("../Media/work-tgm-politalk-01.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-tgm-politalk-02.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-politalk-02.webp")}
+                  fallback={require("../Media/work-tgm-politalk-02.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-tgm-politalk-03.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-politalk-03.webp")}
+                  fallback={require("../Media/work-tgm-politalk-03.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-tgm-politalk-04.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-politalk-04.webp")}
+                  fallback={require("../Media/work-tgm-politalk-04.jpg")}
                   alt=""
                 />
               </li>
@@ -226,10 +274,18 @@ function WorkTGM() {
 
             <ul>
               <li>
-                <img src={require("../Media/work-tgm-rockart-01.jpg")} alt="" />
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-rockart-01.webp")}
+                  fallback={require("../Media/work-tgm-rockart-01.jpg")}
+                  alt=""
+                />
               </li>
               <li>
-                <img src={require("../Media/work-tgm-rockart-02.jpg")} alt="" />
+                <ImgWithFallback
+                  src={require("../Media/work-tgm-rockart-02.webp")}
+                  fallback={require("../Media/work-tgm-rockart-02.jpg")}
+                  alt=""
+                />
               </li>
             </ul>
           </section>

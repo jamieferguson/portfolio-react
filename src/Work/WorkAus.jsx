@@ -10,6 +10,20 @@ const ScrollToTop = () => {
   return null;
 };
 
+const ImgWithFallback = ({
+  src,
+  fallback,
+  type = "image/webp",
+  ...delegated
+}) => {
+  return (
+    <picture>
+      <source srcSet={src} type={type} />
+      <img src={fallback} {...delegated} />
+    </picture>
+  );
+};
+
 function WorkAus() {
   return (
     <div className="aus">
@@ -57,38 +71,44 @@ function WorkAus() {
             <h5>Your School</h5>
             <ul>
               <li>
-                <img
-                  src={require("../Media/work-aus-yourschool-01.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-yourschool-01.webp")}
+                  fallback={require("../Media/work-aus-yourschool-01.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-yourschool-02.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-yourschool-02.webp")}
+                  fallback={require("../Media/work-aus-yourschool-02.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-yourschool-02a.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-yourschool-02a.webp")}
+                  fallback={require("../Media/work-aus-yourschool-02a.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-yourschool-04.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-yourschool-04.webp")}
+                  fallback={require("../Media/work-aus-yourschool-04.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-yourschool-05.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-yourschool-05.webp")}
+                  fallback={require("../Media/work-aus-yourschool-05.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-yourschool-06.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-yourschool-06.webp")}
+                  fallback={require("../Media/work-aus-yourschool-06.jpg")}
                   alt=""
                 />
               </li>
@@ -103,14 +123,16 @@ function WorkAus() {
             <h5>Federal Election 2013 - Homepage</h5>
             <ul>
               <li>
-                <img
-                  src={require("../Media/work-aus-election-01.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-election-01.webp")}
+                  fallback={require("../Media/work-aus-election-01.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-election-02.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-election-02.webp")}
+                  fallback={require("../Media/work-aus-election-02.jpg")}
                   alt=""
                 />
               </li>
@@ -126,38 +148,44 @@ function WorkAus() {
             <h5>Federal Election 2013 - App</h5>
             <ul>
               <li>
-                <img
-                  src={require("../Media/work-aus-electionapp-01.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-electionapp-01.webp")}
+                  fallback={require("../Media/work-aus-electionapp-01.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-electionapp-02.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-electionapp-02.webp")}
+                  fallback={require("../Media/work-aus-electionapp-02.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-electionapp-03.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-electionapp-03.webp")}
+                  fallback={require("../Media/work-aus-electionapp-03.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-electionapp-04.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-electionapp-04.webp")}
+                  fallback={require("../Media/work-aus-electionapp-04.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-electionapp-05.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-electionapp-05.webp")}
+                  fallback={require("../Media/work-aus-electionapp-05.jpg")}
                   alt=""
                 />
               </li>
               <li>
-                <img
-                  src={require("../Media/work-aus-electionapp-06.jpg")}
+                <ImgWithFallback
+                  src={require("../Media/work-aus-electionapp-06.webp")}
+                  fallback={require("../Media/work-aus-electionapp-06.jpg")}
                   alt=""
                 />
               </li>

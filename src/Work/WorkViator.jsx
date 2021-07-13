@@ -10,6 +10,20 @@ const ScrollToTop = () => {
   return null;
 };
 
+const ImgWithFallback = ({
+  src,
+  fallback,
+  type = "image/webp",
+  ...delegated
+}) => {
+  return (
+    <picture>
+      <source srcSet={src} type={type} />
+      <img src={fallback} {...delegated} />
+    </picture>
+  );
+};
+
 function WorkViator() {
   return (
     <div className="viator">
@@ -69,8 +83,9 @@ function WorkViator() {
               changed.
             </p>
             <div className="item bordered">
-              <img
-                src={require("../Media/work-viator-sitemap.png")}
+              <ImgWithFallback
+                src={require("../Media/work-viator-sitemap.webp")}
+                fallback={require("../Media/work-viator-sitemap.png")}
                 alt="Viator iPhone App - IA"
               />
             </div>
@@ -79,15 +94,17 @@ function WorkViator() {
               review with stakeholders.
             </p>
             <div className="item bordered">
-              <img
-                src={require("../Media/work-viator-wireframes.png")}
+              <ImgWithFallback
+                src={require("../Media/work-viator-wireframes.webp")}
+                fallback={require("../Media/work-viator-wireframes.png")}
                 alt="Viator iPhone App - Wireframes"
               />
             </div>
             <p>Some examples of visual design mockups that I did.</p>
             <div className="item bordered">
-              <img
-                src={require("../Media/work-viator-designs.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-viator-designs.webp")}
+                fallback={require("../Media/work-viator-designs.jpg")}
                 alt="Viator iPhone App - Mockups"
               />
             </div>
@@ -100,8 +117,9 @@ function WorkViator() {
               time ensuring the UI wasn't simply a copy of the changes from iOS
             </p>
             <div className="item bordered">
-              <img
-                src={require("../Media/work-viator-android.png")}
+              <ImgWithFallback
+                src={require("../Media/work-viator-android.webp")}
+                fallback={require("../Media/work-viator-android.png")}
                 alt="Viator Android App - Wireframes"
               />
             </div>
@@ -113,8 +131,9 @@ function WorkViator() {
               review with stakeholders.
             </p>
             <div className="item bordered">
-              <img
-                src={require("../Media/work-viator-mobile.png")}
+              <ImgWithFallback
+                src={require("../Media/work-viator-mobile.webp")}
+                fallback={require("../Media/work-viator-mobile.png")}
                 alt="Viator Mobile Site"
               />
             </div>

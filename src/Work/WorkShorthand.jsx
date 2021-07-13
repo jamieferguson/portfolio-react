@@ -10,6 +10,20 @@ const ScrollToTop = () => {
   return null;
 };
 
+const ImgWithFallback = ({
+  src,
+  fallback,
+  type = "image/webp",
+  ...delegated
+}) => {
+  return (
+    <picture>
+      <source srcSet={src} type={type} />
+      <img src={fallback} {...delegated} />
+    </picture>
+  );
+};
+
 const WorkShorthand = () => (
   <div className="shorthand">
     <Page>
@@ -75,14 +89,16 @@ const WorkShorthand = () => (
           </p>
           <ul>
             <li className="example-full">
-              <img
-                src={require("../Media/work-sh-dash-01.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-dash-01.webp")}
+                fallback={require("../Media/work-sh-dash-01.jpg")}
                 alt="The Shorthand dashboard"
               />
             </li>
             <li className="example-full">
-              <img
-                src={require("../Media/work-sh-editor-01.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-editor-01.webp")}
+                fallback={require("../Media/work-sh-editor-01.jpg")}
                 alt="The Shorthand editor"
               />
             </li>
@@ -100,38 +116,44 @@ const WorkShorthand = () => (
           </p>
           <ul>
             <li>
-              <img
-                src={require("../Media/work-sh-ui-03.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-ui-03.webp")}
+                fallback={require("../Media/work-sh-ui-03.jpg")}
                 alt="Text block options in the Shorthand editor"
               />
             </li>
             <li>
-              <img
-                src={require("../Media/work-sh-ui-04.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-ui-04.webp")}
+                fallback={require("../Media/work-sh-ui-04.jpg")}
                 alt="Text styling options in the Shorthand editor"
               />
             </li>
             <li>
-              <img
-                src={require("../Media/work-sh-ui-05.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-ui-05.webp")}
+                fallback={require("../Media/work-sh-ui-05.jpg")}
                 alt="A close-up of some section settings UI"
               />
             </li>
             <li>
-              <img
-                src={require("../Media/work-sh-ui-06.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-ui-06.webp")}
+                fallback={require("../Media/work-sh-ui-06.jpg")}
                 alt="Manage Story Collaborators panel in the Shorthand editor"
               />
             </li>
             <li>
-              <img
-                src={require("../Media/work-sh-ui-01.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-ui-01.webp")}
+                fallback={require("../Media/work-sh-ui-01.jpg")}
                 alt="Manage Story Collaborators panel on the Shorthand dashboard"
               />
             </li>
             <li>
-              <img
-                src={require("../Media/work-sh-ui-02.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-ui-02.webp")}
+                fallback={require("../Media/work-sh-ui-02.jpg")}
                 alt="Leader View option enabled on the Shorthand dashboard"
               />
             </li>
@@ -154,33 +176,38 @@ const WorkShorthand = () => (
           </p>
           <ul>
             <li>
-              <img
-                src={require("../Media/work-sh-mock-01.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-mock-01.webp")}
+                fallback={require("../Media/work-sh-mock-01.jpg")}
                 alt="Shorthand Social - tweet scheduler UI"
               />
             </li>
             <li>
-              <img
-                src={require("../Media/work-sh-mock-02.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-mock-02.webp")}
+                fallback={require("../Media/work-sh-mock-02.jpg")}
                 alt="Shorthand Social - dashboard mockup"
               />
             </li>
             <li className="example-full">
-              <img
-                src={require("../Media/work-sh-concept-02.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-concept-02.webp")}
+                fallback={require("../Media/work-sh-concept-02.jpg")}
                 alt="Shorthand Social - An initial mockup of the tweet previewer"
               />
             </li>
             <li>
-              <img
-                src={require("../Media/work-sh-concept-01.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-concept-01.webp")}
+                fallback={require("../Media/work-sh-concept-01.jpg")}
                 alt="Shorthand Social - Published story UI"
               />
             </li>
 
             <li>
-              <img
-                src={require("../Media/work-sh-concept-03.jpg")}
+              <ImgWithFallback
+                src={require("../Media/work-sh-concept-03.webp")}
+                fallback={require("../Media/work-sh-concept-03.jpg")}
                 alt="Shorthand Social - An initial mockup of the tweet previewer"
               />
             </li>
