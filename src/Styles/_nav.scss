@@ -47,8 +47,8 @@
   z-index: 10;
   transition: transform 0.15s ease-in-out;
   @media screen and (min-width: $breakpoint-sm) {
-    top: $page-padding-lg + 10px;
-    left: $page-padding-lg + 10px;
+    top: $page-padding-lg + 20px;
+    left: $page-padding-lg + 20px;
   }
   &:hover {
     transform: translateX(-2px);
