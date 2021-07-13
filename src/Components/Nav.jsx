@@ -6,16 +6,6 @@ function Nav() {
   return (
     <nav className="main-nav">
       <ul>
-        <li className="nav-home">
-          <Link
-            to={{
-              pathname: "/",
-              state: { prev: false },
-            }}
-          >
-            Home
-          </Link>
-        </li>
         <li>
           <a href="mailto:jamie@jferguson.me" tabindex="0">
             Contact

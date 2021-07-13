@@ -46,7 +46,8 @@
     top: $page-padding-lg + 20px;
     left: $page-padding-lg + 20px;
   }
-  &:hover {
+  &:hover,
+  &:focus-within {
     transform: translateX(-2px);
     .btn {
       box-shadow: 0 0 0 4px #fff, 0 3px 20px rgba(black, 0.5);
