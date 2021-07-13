@@ -51,29 +51,6 @@
     }
   }
 
-  nav {
-    color: $text-color;
-    box-shadow: none;
-
-    ul {
-      li {
-        a,
-        a:visited {
-          color: $text-color;
-        }
-
-        &.current,
-        &:hover {
-          a,
-          a:visited {
-            color: $white;
-            background-color: $text-color;
-          }
-        }
-      }
-    }
-  }
-
   .nav-home {
     display: none;
   }

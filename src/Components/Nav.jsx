@@ -17,13 +17,16 @@ function Nav() {
           </Link>
         </li>
         <li>
-          <a href="mailto:jamie@jferguson.me">Contact</a>
+          <a href="mailto:jamie@jferguson.me" tabindex="0">
+            Contact
+          </a>
         </li>
         <li>
           <a
             href="http://au.linkedin.com/in/jsferguson"
             target="_blank"
             rel="noopener noreferrer"
+            tabindex="0"
           >
             Linkedin
           </a>
