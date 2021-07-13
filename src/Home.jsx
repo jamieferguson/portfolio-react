@@ -16,22 +16,20 @@ const Home = () => (
   <BodyClassName className="home">
     <Page>
       <Route component={ScrollToTop} />
-      <div className="home">
-        <Nav />
-        <header>
-          <div className="Header--inner">
-            <h1>Jamie Ferguson</h1>
-            <h2>
-              Product Designer{" "}
-              <span className="location">/ Sydney, Australia</span>
-            </h2>
-          </div>
-        </header>
-        <section id="work">
-          <WorkList />
-        </section>
-        <Footer />
-      </div>
+      <Nav />
+      <header>
+        <div className="Header--inner">
+          <h1>Jamie Ferguson</h1>
+          <h2>
+            Product Designer{" "}
+            <span className="location">/ Sydney, Australia</span>
+          </h2>
+        </div>
+      </header>
+      <section id="work">
+        <WorkList />
+      </section>
+      <Footer />
     </Page>
   </BodyClassName>
 );

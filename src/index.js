@@ -15,7 +15,6 @@ const supportsHistory = "pushState" in window.history;
 
 const Portfolio = () => (
   <BrowserRouter forceRefresh={!supportsHistory}>
-    <main>
       <Route
         render={({ location }) => {
           return (
@@ -34,7 +33,6 @@ const Portfolio = () => (
           );
         }}
       />
-    </main>
   </BrowserRouter>
 );
 

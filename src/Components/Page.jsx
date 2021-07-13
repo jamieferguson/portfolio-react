@@ -9,7 +9,7 @@ function Page({ children, color, background, location: { state } }) {
     "page--prev": state && state.prev,
   });
   return (
-    <section
+    <div
       className={cx}
       style={{
         color,
@@ -17,7 +17,7 @@ function Page({ children, color, background, location: { state } }) {
       }}
     >
       {children}
-    </section>
+    </div>
   );
 }
 
