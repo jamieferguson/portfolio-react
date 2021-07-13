@@ -64,6 +64,43 @@
     padding: 0;
     position: relative;
     color: transparent;
+    transition: background-color 0.15s ease-in-out;
+
+    .shorthand & {
+      background-color: $shorthand;
+
+      &:hover,
+      &:focus-within {
+        background-color: darken($shorthand, 5%);
+      }
+    }
+
+    .viator & {
+      background-color: $viator;
+
+      &:hover,
+      &:focus-within {
+        background-color: darken($viator, 5%);
+      }
+    }
+
+    .tgm & {
+      background-color: $tgm;
+
+      &:hover,
+      &:focus-within {
+        background-color: darken($tgm, 5%);
+      }
+    }
+
+    .aus & {
+      background-color: $aus;
+
+      &:hover,
+      &:focus-within {
+        background-color: darken($aus, 5%);
+      }
+    }
 
     &:after {
       content: "";
