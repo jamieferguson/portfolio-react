@@ -18,7 +18,6 @@ const Portfolio = () => (
     <main>
       <Route
         render={({ location }) => {
-          const { pathname } = location;
           return (
             <Route
               location={location}
