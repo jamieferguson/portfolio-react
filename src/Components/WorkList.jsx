@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function WorkList() {
   return (
-    <ul>
+    <ul aria-label="Work examples">
       <li className="shorthand">
         <Link
           to={{

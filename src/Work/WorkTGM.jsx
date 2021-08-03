@@ -19,7 +19,7 @@ const ImgWithFallback = ({
   return (
     <picture>
       <source srcSet={src} type={type} />
-      <img src={fallback} {...delegated} />
+      <img src={fallback} {...delegated} alt="" />
     </picture>
   );
 };
@@ -71,18 +71,23 @@ function WorkTGM() {
           </section>
 
           <section className="example grid">
-            <h5>Behind The Wire</h5>
+            <h3>Behind The Wire</h3>
             <p>
               'Behind The Wire' used data about incidents in detention gathered
               via FOI requests by the team at{" "}
               <a href="http://detentionlogs.com.au/">Detention Logs</a> & aimed
               to present them in a meaningful way. Each square represents one
-              incident. A user can easily sort or browse the incidents as well
-              as learn more by pressing each 'square'. Rather than try to
-              present the data with any bias we created a way for users to tell
-              us what they thought was the most important. To do this they could
-              'flag' an incident, which would increase the brightness of that
-              incident on the grid.
+              incident.
+            </p>
+            <p>
+              A user can easily sort or browse the incidents as well as learn
+              more by pressing each 'square'. Rather than try to present the
+              data with any particular bias we created a way for users to tell
+              us what they thought was the most important.
+            </p>
+            <p>
+              To do this they could 'flag' an incident, which would increase the
+              brightness of that incident on the grid.
             </p>
             <ul>
               <li>
@@ -146,7 +151,7 @@ function WorkTGM() {
             </ul>
           </section>
           <section className="example grid">
-            <h5>Projects that are still live!</h5>
+            <h3>Projects that are still live!</h3>
             <p>
               Unfortunately these are the only projects that are still live from
               my time at The Global Mail.
@@ -203,7 +208,7 @@ function WorkTGM() {
             </ul>
           </section>
           <section className="example grid">
-            <h5>Party Lines</h5>
+            <h3>Party Lines</h3>
             <p>
               'Party Lines' attempted to look at the way politicians use
               language to frame certain topics. We took Hansard data and made it
@@ -227,7 +232,7 @@ function WorkTGM() {
             </ul>
           </section>
           <section className="example grid">
-            <h5>Poli/talk</h5>
+            <h3>Poli/talk</h3>
             <p>
               Expanding on 'Party Lines', the 'Poli/talk' project attempted to
               allow further investigation of Hansard data by making it easy for
@@ -266,7 +271,7 @@ function WorkTGM() {
             </ul>
           </section>
           <section className="example grid">
-            <h5>Rock Art at Risk</h5>
+            <h3>Rock Art at Risk</h3>
             <p>
               'Rock Art at Risk' looked at the sites of indiginous rock art and
               overlayed that with data from mines and mining licenses.

@@ -6,6 +6,7 @@ function WorkNav() {
     <nav className="work-nav">
       <Link
         className="btn"
+        label="Back to homepage"
         to={{
           pathname: "/",
           state: { prev: false },

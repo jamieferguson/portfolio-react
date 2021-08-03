@@ -1,9 +1,11 @@
 #work {
-  h5 {
+  h2 {
     text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
   }
   ul {
-    border-radius: 20px;
+    border-radius: $pageRadius;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -71,6 +73,7 @@
             letter-spacing: 0.15em;
             margin-bottom: 0.5em;
             font-size: calc(0.8em + 0.25vmax);
+            padding: 0;
           }
 
           h4 {
@@ -115,7 +118,7 @@
       .background-overlay {
         background-color: $shorthand;
       }
-      body.shorthand & {
+      .shorthand & {
         display: none;
       }
     }
@@ -128,7 +131,7 @@
       .background-overlay {
         background-color: $viator;
       }
-      body.viator & {
+      .viator & {
         display: none;
       }
     }
@@ -141,7 +144,7 @@
       .background-overlay {
         background-color: $tgm;
       }
-      body.tgm & {
+      .tgm & {
         display: none;
       }
     }
@@ -154,7 +157,7 @@
       .background-overlay {
         background-color: $aus;
       }
-      body.aus & {
+      .aus & {
         display: none;
       }
     }

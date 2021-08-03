@@ -4,7 +4,7 @@ import WorkList from "./WorkList";
 function WorkFooter() {
   return (
     <section id="work" className="work-footer">
-      <h5>More work</h5>
+      <h2>More work</h2>
       <WorkList />
     </section>
   );

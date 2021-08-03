@@ -52,38 +52,38 @@
   #work {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: $pageRadius;
     overflow: hidden;
 
     @media screen and (orientation: landscape) and (min-height: 500px) {
-      width: 75vw;
-      height: calc(100vh - 40px);
+      width: calc(75vw - 40px);
+      // height: calc(100vh - 40px);
       margin-left: 25vw;
-      overflow-x: hidden;
-      overflow-y: auto;
-      scrollbar-width: thin;
+      // overflow-x: hidden;
+      // overflow-y: auto;
+      // scrollbar-width: thin;
 
-      /* width */
-      &::-webkit-scrollbar {
-        width: 9px;
-      }
+      // /* width */
+      // &::-webkit-scrollbar {
+      //   width: 9px;
+      // }
 
-      /* Track */
-      &::-webkit-scrollbar-track {
-        background: transparent;
-      }
+      // /* Track */
+      // &::-webkit-scrollbar-track {
+      //   background: transparent;
+      // }
 
-      /* Handle */
-      &::-webkit-scrollbar-thumb {
-        background: rgba(black, 0.1);
-        width: 5px;
-        border-radius: 10px;
-        border: 2px solid white;
+      // /* Handle */
+      // &::-webkit-scrollbar-thumb {
+      //   background: rgba(black, 0.1);
+      //   width: 5px;
+      //   border-radius: 10px;
+      //   border: 2px solid white;
 
-        &:hover {
-          background: rgba(black, 0.2);
-        }
-      }
+      //   &:hover {
+      //     background: rgba(black, 0.2);
+      //   }
+      // }
     }
 
     @media screen and (orientation: landscape) {

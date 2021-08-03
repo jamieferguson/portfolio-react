@@ -65,6 +65,7 @@
     position: relative;
     color: transparent;
     transition: background-color 0.15s ease-in-out;
+    text-indent: -9999px;
 
     .shorthand & {
       background-color: $shorthand;

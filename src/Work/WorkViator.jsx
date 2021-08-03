@@ -19,7 +19,7 @@ const ImgWithFallback = ({
   return (
     <picture>
       <source srcSet={src} type={type} />
-      <img src={fallback} {...delegated} />
+      <img src={fallback} {...delegated} alt="" />
     </picture>
   );
 };
@@ -59,10 +59,11 @@ function WorkViator() {
             </p>
             <p>
               My main tasks were to gather requirements from the product team
-              and translate these into Wireframes and Prototypes. We chose Axure
+              and translate these into wireframes and prototypes. We chose Axure
               to do this, however I also prototyped in HTML when it made sense
-              to do so. I also worked closely with the developers, engaging them
-              as part of the design process.
+              to do so. I worked closely with the developers throughout the
+              proess, engaging them as part of the design phase as well as
+              assisting where possible in the delivery of the final product.
             </p>
             <p>
               As a firm believer that UX doesn't end when wireframes are signed
@@ -71,15 +72,15 @@ function WorkViator() {
             </p>
             <p>
               During my short time there I worked on a major redesign of their
-              iOS and Android apps as well as their main mobile website.{" "}
+              iOS and Android apps as well as their main mobile website.
             </p>
           </section>
 
           <section className="example screens">
-            <h5>Viator iPhone iOS7 App Redesign</h5>
+            <h3>Viator iPhone iOS7 App Redesign</h3>
             <p>
               After requirements had been gathered I mapped out the IA of the
-              app to get a sense of what would be kept and what would be
+              app to get a sense of what would be kept and what need to be
               changed.
             </p>
             <div className="item bordered">
@@ -100,7 +101,9 @@ function WorkViator() {
                 alt="Viator iPhone App - Wireframes"
               />
             </div>
-            <p>Some examples of visual design mockups that I did.</p>
+            <p>
+              Some examples of visual design mockups that I did in Photoshop.
+            </p>
             <div className="item bordered">
               <ImgWithFallback
                 src={require("../Media/work-viator-designs.webp")}
@@ -110,7 +113,7 @@ function WorkViator() {
             </div>
           </section>
           <section className="example screens">
-            <h5>Viator Android Phone Redesign</h5>
+            <h3>Viator Android Phone Redesign</h3>
             <p>
               The brief was a consistent experience across platforms, however
               being less familiar with Android design patterns I spent a lot of
@@ -125,7 +128,7 @@ function WorkViator() {
             </div>
           </section>
           <section className="example screens">
-            <h5>Viator Mobile Web Redesign</h5>
+            <h3>Viator Mobile Web Redesign</h3>
             <p>
               Wireframes and some simple prototypes were created in Axure for
               review with stakeholders.

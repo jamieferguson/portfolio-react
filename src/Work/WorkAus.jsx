@@ -19,7 +19,7 @@ const ImgWithFallback = ({
   return (
     <picture>
       <source srcSet={src} type={type} />
-      <img src={fallback} {...delegated} />
+      <img src={fallback} {...delegated} alt="" />
     </picture>
   );
 };
@@ -68,7 +68,12 @@ function WorkAus() {
           </section>
 
           <section className="example grid">
-            <h5>Your School</h5>
+            <h3>Your School</h3>
+            <p>
+              'Your School' was the first project of it's kind in Australia that
+              took all the available NAPLAN data and made it easy to rank and
+              compare schools. Unfortunately this tool is no longer live.
+            </p>
             <ul>
               <li>
                 <ImgWithFallback
@@ -113,14 +118,15 @@ function WorkAus() {
                 />
               </li>
             </ul>
-            <p>
-              'Your School' was the first project of it's kind in Australia that
-              took all the available NAPLAN data and made it easy to rank and
-              compare schools. Unfortunately this tool is no longer live.
-            </p>
           </section>
           <section className="example grid">
-            <h5>Federal Election 2013 - Homepage</h5>
+            <h3>Federal Election 2013 - Homepage</h3>
+            <p>
+              With politics being at the core of The Australian's remit, federal
+              elections are one of the most important events that they cover. I
+              was in charge of designing the election tools for the site
+              homepage.
+            </p>
             <ul>
               <li>
                 <ImgWithFallback
@@ -137,15 +143,13 @@ function WorkAus() {
                 />
               </li>
             </ul>
-            <p>
-              With politics being at the core of The Australian's remit, federal
-              elections are one of the most important events that they cover. I
-              was in charge of designing the election tools for the site
-              homepage.
-            </p>
           </section>
           <section className="example grid">
-            <h5>Federal Election 2013 - App</h5>
+            <h3>Federal Election 2013 - App</h3>
+            <p>
+              The main feature we built for the election was an app that allowed
+              you to view live election data for any seat in the country.
+            </p>
             <ul>
               <li>
                 <ImgWithFallback
@@ -190,10 +194,6 @@ function WorkAus() {
                 />
               </li>
             </ul>
-            <p>
-              The main feature we built for the election was an app that allowed
-              you to view live election data for any seat in the country.
-            </p>
           </section>
         </article>
         <WorkFooter />

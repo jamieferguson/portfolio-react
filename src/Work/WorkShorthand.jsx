@@ -19,7 +19,7 @@ const ImgWithFallback = ({
   return (
     <picture>
       <source srcSet={src} type={type} />
-      <img src={fallback} {...delegated} />
+      <img src={fallback} {...delegated} alt="" />
     </picture>
   );
 };
@@ -65,23 +65,24 @@ const WorkShorthand = () => (
           <p>
             Initially my role was Project Designer where I was the design lead
             for all client projects. I would be involved from initial pitch
-            stage, then developing the 'theme' as well as wireframing and
-            designing any custom features as required.
+            stage, then developing and co-designing the 'theme' with the client,
+            as well as wireframing and designing any custom features as
+            required.
           </p>
           <p>
-            I then transitioned to work as part of the product team as Product
-            Designer on developing new features and improvements. Eventually
-            becoming Design Director, I worked closely with all parts of the
-            business - development, support, sales and management.
+            As the product evolved I transitioned to work as Product Designer on
+            designing new features and improvements. This led to me becoming
+            Design Director, where I continue to work closely with all parts of
+            the business - development, support, sales and management.
           </p>
           <p>
-            And as it is a small team I was involved in a broad range of
-            activities - from client support through to product strategy.
+            As it is a small team I am involved in a broad range of activities -
+            from client support through to product ideation and strategy.
           </p>
         </section>
 
         <section className="example grid">
-          <h5>Shorthand - Main App screens</h5>
+          <h3>Shorthand - Main App screens</h3>
           <p>
             The Shorthand app has two main 'views' - the dashboard, where all
             stories and collections live, and the editor where the user can
@@ -106,13 +107,18 @@ const WorkShorthand = () => (
         </section>
 
         <section className="example grid">
-          <h5>Shorthand - UI examples</h5>
+          <h3>Shorthand - UI examples</h3>
           <p>
             The primary concern when designing anything for the Shorthand app
             was simplicity. Where possible it should feel familiar or at least
             be as self-explanitory as possible. We believed the user should
             never feel overwhelmed with too many options up front so we focussed
             heavily on only showing extra options at the appropriate times.
+          </p>
+          <p>
+            Time and again, when asked for feedback about why customers chose
+            Shorthand it was due to the ease of use in producing engaging and
+            successful stories.
           </p>
           <ul>
             <li>
@@ -161,18 +167,23 @@ const WorkShorthand = () => (
         </section>
 
         <section className="example grid">
-          <h5>Shorthand - Some mocks & concepts</h5>
+          <h3>Shorthand - Some mocks & concepts</h3>
           <p>
-            Some examples of the many mocks & rough concepts that I did at
-            Shorthand. The ideation process varied depending on the feature.
-            Some started as prototypes directly in the browser, some were more
-            the standard prototypes using Photoshop, Figma or Invision, and
-            others started as rough concept 'sketches' or storyboards.
+            Some examples of the many mocks & rough concepts that I've done
+            while at Shorthand.
           </p>
           <p>
-            As I worked alongside the developers directly in the codebase, we
-            tried to get from initial concept to a working prototype (that
-            'felt' real) as rapidly as possible.
+            The ideation process varies depending on the needs of the feature.
+            Some start as prototypes directly in the browser, some are more
+            conventional prototypes using a tool such as Figma, and others start
+            as rough concept 'sketches' or storyboards.
+          </p>
+          <p>
+            One thing I advocate strongly for is getting a rough concept{" "}
+            <em>in the browser</em> as quickly as possible which gives us a feel
+            for how something could work. This is then iterated upon in close
+            collaboration with the engineers and validated through user testing
+            and feedback.
           </p>
           <ul>
             <li>

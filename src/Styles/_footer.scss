@@ -1,6 +1,6 @@
 footer {
   padding: $padding-y $padding-x 0;
-  color: $text-color-alt;
+  color: $text-color;
   font-size: 12px;
   @media screen and (orientation: landscape) {
     padding-left: $padding-x-lg;
@@ -8,5 +8,11 @@ footer {
   }
   .work-footer + & {
     padding-top: 1em;
+  }
+}
+
+#work.work-footer ul {
+  @media screen and (orientation: landscape) and (min-width: 900px) {
+    flex-direction: row;
   }
 }
