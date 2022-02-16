@@ -12,18 +12,15 @@
 
     li {
       flex: 1;
-      height: 45vh;
-      min-height: 45vh;
-      @media screen and (orientation: portrait) {
-        height: 31vh;
-        min-height: 31vh;
-      }
+
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
 
       a,
       a:visited {
+        height: 45vh;
+        min-height: 45vh;
         z-index: 1;
         display: flex;
         align-items: flex-end;
@@ -39,6 +36,11 @@
           .background-overlay {
             opacity: 0.9;
           }
+        }
+
+        @media screen and (orientation: portrait) {
+          height: 31vh;
+          min-height: 31vh;
         }
 
         .icon {
