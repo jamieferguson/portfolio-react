@@ -1,6 +1,7 @@
 footer {
   padding: $padding-y $padding-x 0;
   color: $text-color;
+  opacity: 0.6;
   font-size: 12px;
   @media screen and (orientation: landscape) {
     padding-left: $padding-x-lg;
