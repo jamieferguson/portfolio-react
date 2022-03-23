@@ -151,9 +151,9 @@ const WorkShorthand = () => (
             </li>
             <li>
               <ImgWithFallback
-                src={require("../Media/work-sh-ui-01.webp")}
-                fallback={require("../Media/work-sh-ui-01.jpg")}
-                alt="Manage Story Collaborators panel on the Shorthand dashboard"
+                src={require("../Media/work-sh-ui-07.webp")}
+                fallback={require("../Media/work-sh-ui-07.jpg")}
+                alt="Media panel in the Shorthand editor"
               />
             </li>
             <li>
