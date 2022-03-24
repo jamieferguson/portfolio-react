@@ -63,21 +63,35 @@ const WorkShorthand = () => (
             features with zero development.
           </p>
           <p>
-            Initially my role was Project Designer where I was the design lead
-            for all client projects. I would be involved from initial pitch
-            stage, then developing and co-designing the 'theme' with the client,
-            as well as wireframing and designing any custom features as
-            required.
+            I joined Shorthand just before the product went into a closed Beta
+            phase.
           </p>
           <p>
-            As the product evolved I transitioned to work as Product Designer on
-            designing new features and improvements. This led to me becoming
-            Design Director, where I continue to work closely with all parts of
-            the business - development, support, sales and management.
+            In my initial role as <strong>Project Designer</strong> I worked
+            with customers to help design and build their stories in what was
+            still just a very basic tool. I fed back learnings to the
+            engineering team in order to help them prioritise features.
           </p>
           <p>
-            As it is a small team I am involved in a broad range of activities -
-            from client support through to product ideation and strategy.
+            As the tool evolved I moved into the{" "}
+            <strong>Product Designer</strong> role where I helped to
+            conceptualise, design & build new features for the product. As part
+            of what was still a very small team I was also involved in strategy
+            and support.
+          </p>
+          <p>
+            I was invited to join the fledgling executive team whereupon I was
+            given the fancy title of <strong>Director of Design</strong>, and
+            was the Design & UX voice at the table when discussing company and
+            product strategy.
+          </p>
+          <p>
+            As the company grew I was able to start building out the Design & UX
+            function. My first hire was a UX Researcher, soon followed by a
+            Product Designer. Together we built out a more consistent, informed
+            product design process that has enabled us to move from a scrappy
+            bunch of individual contributors to a more cohesive unit within the
+            Product team.
           </p>
         </section>
 
@@ -160,7 +174,7 @@ const WorkShorthand = () => (
               <ImgWithFallback
                 src={require("../Media/work-sh-ui-02.webp")}
                 fallback={require("../Media/work-sh-ui-02.jpg")}
-                alt="Leader View option enabled on the Shorthand dashboard"
+                alt="Scrollpoints Highlight Editor UI"
               />
             </li>
           </ul>
@@ -186,32 +200,55 @@ const WorkShorthand = () => (
             and feedback.
           </p>
           <ul>
+            <li className="example-full">
+              <ImgWithFallback
+                src={require("../Media/work-sh-scrollpoints.webp")}
+                fallback={require("../Media/work-sh-scrollpoints.jpg")}
+                alt="Initial concepts for Scrollpoints section"
+              />
+            </li>
             <li>
               <ImgWithFallback
                 src={require("../Media/work-sh-mock-01.webp")}
                 fallback={require("../Media/work-sh-mock-01.jpg")}
-                alt="Shorthand Social - tweet scheduler UI"
+                alt="Multi-select mockup"
               />
             </li>
             <li>
               <ImgWithFallback
                 src={require("../Media/work-sh-mock-02.webp")}
                 fallback={require("../Media/work-sh-mock-02.jpg")}
-                alt="Shorthand Social - dashboard mockup"
+                alt="Initial concepts for map based section"
               />
             </li>
             <li className="example-full">
               <ImgWithFallback
-                src={require("../Media/work-sh-concept-02.webp")}
-                fallback={require("../Media/work-sh-concept-02.jpg")}
-                alt="Shorthand Social - An initial mockup of the tweet previewer"
+                src={require("../Media/work-sh-projects.webp")}
+                fallback={require("../Media/work-sh-projects.jpg")}
+                alt="Example of Figma spaghetti for a larger redesign project"
               />
             </li>
             <li>
               <ImgWithFallback
+                src={require("../Media/work-sh-home.webp")}
+                fallback={require("../Media/work-sh-home.jpg")}
+                alt="Concepts for Shorthand homepage"
+              />
+            </li>
+
+            <li>
+              <ImgWithFallback
+                src={require("../Media/work-sh-commenting.webp")}
+                fallback={require("../Media/work-sh-commenting.jpg")}
+                alt="Early concepts for commenting in the Shorthand editor"
+              />
+            </li>
+
+            <li>
+              <ImgWithFallback
                 src={require("../Media/work-sh-concept-01.webp")}
                 fallback={require("../Media/work-sh-concept-01.jpg")}
-                alt="Shorthand Social - Published story UI"
+                alt="Concepts for section thumbnail rework"
               />
             </li>
 
@@ -219,7 +256,7 @@ const WorkShorthand = () => (
               <ImgWithFallback
                 src={require("../Media/work-sh-concept-03.webp")}
                 fallback={require("../Media/work-sh-concept-03.jpg")}
-                alt="Shorthand Social - An initial mockup of the tweet previewer"
+                alt="Concepts for publishing rework"
               />
             </li>
           </ul>

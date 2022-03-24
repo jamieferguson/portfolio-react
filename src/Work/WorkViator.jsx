@@ -59,16 +59,11 @@ function WorkViator() {
             </p>
             <p>
               My main tasks were to gather requirements from the product team
-              and translate these into wireframes and prototypes. We chose Axure
-              to do this, however I also prototyped in HTML when it made sense
-              to do so. I worked closely with the developers throughout the
-              process, engaging them as part of the design phase as well as
-              assisting where possible in the delivery of the final product.
-            </p>
-            <p>
-              As a firm believer that UX doesn't end when wireframes are signed
-              off I also contributed to visual design and development wherever
-              possible.
+              and translate these into wireframes and prototypes. I worked
+              closely with the developers throughout the process, engaging them
+              as part of the design phase as well as assisting where possible in
+              the delivery of the final product. I also contributed to visual
+              design and development wherever possible.
             </p>
             <p>
               During my short time there I worked on a major redesign of their
